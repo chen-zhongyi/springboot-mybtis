@@ -1,0 +1,679 @@
+2018-02-12 17:38:10,411 [restartedMain]  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 17293 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-02-12 17:38:10,416 [restartedMain]  INFO DemoApplication:597 - The following profiles are active: dev
+2018-02-12 17:38:10,617 [restartedMain]  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44d3e8ef: startup date [Mon Feb 12 17:38:10 CST 2018]; root of context hierarchy
+2018-02-12 17:38:10,639 [background-preinit]  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-02-12 17:38:11,528 [restartedMain]  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-12 17:38:12,656 [restartedMain]  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-02-12 17:38:12,764 [localhost-startStop-1]  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2159 ms
+2018-02-12 17:38:12,935 [localhost-startStop-1]  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to []
+2018-02-12 17:38:12,936 [localhost-startStop-1]  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-12 17:38:12,936 [localhost-startStop-1]  INFO ServletRegistrationBean:193 - Servlet dispatcherServlet was not registered (possibly already registered?)
+2018-02-12 17:38:12,939 [localhost-startStop-1]  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-12 17:38:12,983 [restartedMain]  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.services.imp.AccountServiceImp.setBaseMapper()
+2018-02-12 17:38:13,462 [restartedMain]  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-02-12 17:38:14,082 [restartedMain] DEBUG fetchAll:159 - ==>  Preparing: SELECT * FROM `user` WHERE isDeleted = 0 
+2018-02-12 17:38:14,184 [restartedMain] DEBUG fetchAll:159 - ==> Parameters: 
+2018-02-12 17:38:14,211 [restartedMain] TRACE fetchAll:165 - <==    Columns: id, createTime, updateTime, isDeleted, username, password, otherStr, type, email, phone, realName, isEnable
+2018-02-12 17:38:14,212 [restartedMain] TRACE fetchAll:165 - <==        Row: 11, null, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:38:14,215 [restartedMain] TRACE fetchAll:165 - <==        Row: 12, null, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:38:14,216 [restartedMain] TRACE fetchAll:165 - <==        Row: 13, 1515999327672, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:38:14,217 [restartedMain] TRACE fetchAll:165 - <==        Row: 14, 1515999400176, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:38:14,218 [restartedMain] TRACE fetchAll:165 - <==        Row: 16, 1517758965512, 1517758965512, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,218 [restartedMain] TRACE fetchAll:165 - <==        Row: 17, 1517759005001, 1517759005001, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,219 [restartedMain] TRACE fetchAll:165 - <==        Row: 18, 1517759108852, 1517759108852, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,220 [restartedMain] TRACE fetchAll:165 - <==        Row: 19, 1517759580536, 1517759580536, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,221 [restartedMain] TRACE fetchAll:165 - <==        Row: 20, 1517759679115, 1517759679115, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,221 [restartedMain] TRACE fetchAll:165 - <==        Row: 21, 1517759865192, 1517759865192, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,222 [restartedMain] TRACE fetchAll:165 - <==        Row: 22, 1517760228714, 1517760228714, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,222 [restartedMain] TRACE fetchAll:165 - <==        Row: 23, 1517760348892, 1517760348892, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,223 [restartedMain] TRACE fetchAll:165 - <==        Row: 24, 1517760415756, 1517760415756, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,224 [restartedMain] TRACE fetchAll:165 - <==        Row: 25, 1517760629727, 1517760629727, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,224 [restartedMain] TRACE fetchAll:165 - <==        Row: 26, 1517796214543, 1517796214543, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,225 [restartedMain] TRACE fetchAll:165 - <==        Row: 478024553142947840, 1517824429492, null, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,227 [restartedMain] TRACE fetchAll:165 - <==        Row: 478025000834568192, 1517824536230, 1517824536230, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,228 [restartedMain] TRACE fetchAll:165 - <==        Row: 478025919886266368, 1517824755349, 1517825339042, 0, username1, null, null, USER, null, 187583245191, null, 1
+2018-02-12 17:38:14,228 [restartedMain] TRACE fetchAll:165 - <==        Row: 478635828722012160, 1517970168947, 1517970168947, 0, admin, fe39a8480765a0806e83e21e9fa6cd5f, MIyTNMnS82dQ, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:38:14,229 [restartedMain] TRACE fetchAll:165 - <==        Row: 478693820687454208, 1517983995309, 1517983995309, 0, admin, b8185c6190e391feb6323a549d37a18c, G41kbw9OIacj, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:38:14,229 [restartedMain] TRACE fetchAll:165 - <==        Row: 478693832175652864, 1517983998048, 1517983998048, 0, admin, b7415654a04c1745bd02dcb4abdd285b, 33NCFmpNm218, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:38:14,229 [restartedMain] TRACE fetchAll:165 - <==        Row: 478696277912064000, 1517984581157, 1517984581157, 0, admin, ab69323c52c2c968f695105e682df70c, KAbapEYpsvO9, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:38:14,229 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700246126301184, 1517985527253, 1517985527253, 0, admin, a1bea78c1b1077ae7a9ca6f216a4c731, ZIMN5nGLm7Oa, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:38:14,230 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700252078018560, 1517985528672, 1517985528672, 0, admin, b11de202d9a4e751b2708a4cb9beb45c, NlCaK9NnCQYc, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:38:14,230 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700652155899904, 1517985624058, 1517985624058, 0, admin, f7b15066628edd2f67850d47acc3406c, dVSpEZSnWckk, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:38:14,230 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700659382685696, 1517985625781, 1517985625781, 0, null, d8240c22a6494a6edccc5300e098e5d0, Fd4JrIKiHVGa, USER, 765485378@qq.com, 18758324519, null, 1
+2018-02-12 17:38:14,231 [restartedMain] TRACE fetchAll:165 - <==        Row: 478701575297044480, 1517985844152, 1517985844152, 0, admin, 38389c8de3e1b3609732fe99fc69d307, nefwZT4pZwE9, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:38:14,231 [restartedMain] TRACE fetchAll:165 - <==        Row: 478701583106838528, 1517985846014, 1517985846014, 0, null, 0c7a75a4292d56fa59773378602f7e28, 6nRLMK8LAHr0, USER, 765485378@qq.com, 18758324519, null, 1
+2018-02-12 17:38:14,232 [restartedMain] TRACE fetchAll:165 - <==        Row: 479002122017312768, 1518057500074, 1518057500074, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,232 [restartedMain] TRACE fetchAll:165 - <==        Row: 479155592900907008, 1518094090384, 1518094090384, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,233 [restartedMain] TRACE fetchAll:165 - <==        Row: 479175157760397312, 1518098755010, 1518098755010, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,233 [restartedMain] TRACE fetchAll:165 - <==        Row: 479383666565320704, 1518148467383, 1518148467383, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,233 [restartedMain] TRACE fetchAll:165 - <==        Row: 479417456406827008, 1518156523509, 1518156523509, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,234 [restartedMain] TRACE fetchAll:165 - <==        Row: 479418251793666048, 1518156713144, 1518156713144, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,234 [restartedMain] TRACE fetchAll:165 - <==        Row: 479422942858448896, 1518157831581, 1518157831581, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,235 [restartedMain] TRACE fetchAll:165 - <==        Row: 480189252747923456, 1518340534096, 1518340534096, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,235 [restartedMain] TRACE fetchAll:165 - <==        Row: 480192929873268736, 1518341410791, 1518341410791, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,236 [restartedMain] TRACE fetchAll:165 - <==        Row: 480194975271751680, 1518341898452, 1518341898452, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,236 [restartedMain] TRACE fetchAll:165 - <==        Row: 480206339134459904, 1518344607808, 1518344607808, 0, null, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,236 [restartedMain] TRACE fetchAll:165 - <==        Row: 480207598352601088, 1518344908029, 1518344908029, 0, null, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,237 [restartedMain] DEBUG fetchAll:159 - <==      Total: 40
+2018-02-12 17:38:14,239 [restartedMain] DEBUG fetchAll:159 - ==>  Preparing: SELECT * FROM `user` WHERE isDeleted = 0 
+2018-02-12 17:38:14,239 [restartedMain] DEBUG fetchAll:159 - ==> Parameters: 
+2018-02-12 17:38:14,240 [restartedMain] TRACE fetchAll:165 - <==    Columns: id, createTime, updateTime, isDeleted, username, password, otherStr, type, email, phone, realName, isEnable
+2018-02-12 17:38:14,240 [restartedMain] TRACE fetchAll:165 - <==        Row: 11, null, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:38:14,241 [restartedMain] TRACE fetchAll:165 - <==        Row: 12, null, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:38:14,241 [restartedMain] TRACE fetchAll:165 - <==        Row: 13, 1515999327672, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:38:14,241 [restartedMain] TRACE fetchAll:165 - <==        Row: 14, 1515999400176, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:38:14,242 [restartedMain] TRACE fetchAll:165 - <==        Row: 16, 1517758965512, 1517758965512, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,242 [restartedMain] TRACE fetchAll:165 - <==        Row: 17, 1517759005001, 1517759005001, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,242 [restartedMain] TRACE fetchAll:165 - <==        Row: 18, 1517759108852, 1517759108852, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,243 [restartedMain] TRACE fetchAll:165 - <==        Row: 19, 1517759580536, 1517759580536, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,243 [restartedMain] TRACE fetchAll:165 - <==        Row: 20, 1517759679115, 1517759679115, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,244 [restartedMain] TRACE fetchAll:165 - <==        Row: 21, 1517759865192, 1517759865192, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,244 [restartedMain] TRACE fetchAll:165 - <==        Row: 22, 1517760228714, 1517760228714, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,244 [restartedMain] TRACE fetchAll:165 - <==        Row: 23, 1517760348892, 1517760348892, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,244 [restartedMain] TRACE fetchAll:165 - <==        Row: 24, 1517760415756, 1517760415756, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,245 [restartedMain] TRACE fetchAll:165 - <==        Row: 25, 1517760629727, 1517760629727, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,245 [restartedMain] TRACE fetchAll:165 - <==        Row: 26, 1517796214543, 1517796214543, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:38:14,245 [restartedMain] TRACE fetchAll:165 - <==        Row: 478024553142947840, 1517824429492, null, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,246 [restartedMain] TRACE fetchAll:165 - <==        Row: 478025000834568192, 1517824536230, 1517824536230, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,246 [restartedMain] TRACE fetchAll:165 - <==        Row: 478025919886266368, 1517824755349, 1517825339042, 0, username1, null, null, USER, null, 187583245191, null, 1
+2018-02-12 17:38:14,246 [restartedMain] TRACE fetchAll:165 - <==        Row: 478635828722012160, 1517970168947, 1517970168947, 0, admin, fe39a8480765a0806e83e21e9fa6cd5f, MIyTNMnS82dQ, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:38:14,246 [restartedMain] TRACE fetchAll:165 - <==        Row: 478693820687454208, 1517983995309, 1517983995309, 0, admin, b8185c6190e391feb6323a549d37a18c, G41kbw9OIacj, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:38:14,247 [restartedMain] TRACE fetchAll:165 - <==        Row: 478693832175652864, 1517983998048, 1517983998048, 0, admin, b7415654a04c1745bd02dcb4abdd285b, 33NCFmpNm218, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:38:14,247 [restartedMain] TRACE fetchAll:165 - <==        Row: 478696277912064000, 1517984581157, 1517984581157, 0, admin, ab69323c52c2c968f695105e682df70c, KAbapEYpsvO9, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:38:14,247 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700246126301184, 1517985527253, 1517985527253, 0, admin, a1bea78c1b1077ae7a9ca6f216a4c731, ZIMN5nGLm7Oa, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:38:14,248 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700252078018560, 1517985528672, 1517985528672, 0, admin, b11de202d9a4e751b2708a4cb9beb45c, NlCaK9NnCQYc, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:38:14,248 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700652155899904, 1517985624058, 1517985624058, 0, admin, f7b15066628edd2f67850d47acc3406c, dVSpEZSnWckk, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:38:14,248 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700659382685696, 1517985625781, 1517985625781, 0, null, d8240c22a6494a6edccc5300e098e5d0, Fd4JrIKiHVGa, USER, 765485378@qq.com, 18758324519, null, 1
+2018-02-12 17:38:14,248 [restartedMain] TRACE fetchAll:165 - <==        Row: 478701575297044480, 1517985844152, 1517985844152, 0, admin, 38389c8de3e1b3609732fe99fc69d307, nefwZT4pZwE9, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:38:14,249 [restartedMain] TRACE fetchAll:165 - <==        Row: 478701583106838528, 1517985846014, 1517985846014, 0, null, 0c7a75a4292d56fa59773378602f7e28, 6nRLMK8LAHr0, USER, 765485378@qq.com, 18758324519, null, 1
+2018-02-12 17:38:14,249 [restartedMain] TRACE fetchAll:165 - <==        Row: 479002122017312768, 1518057500074, 1518057500074, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,249 [restartedMain] TRACE fetchAll:165 - <==        Row: 479155592900907008, 1518094090384, 1518094090384, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,249 [restartedMain] TRACE fetchAll:165 - <==        Row: 479175157760397312, 1518098755010, 1518098755010, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,250 [restartedMain] TRACE fetchAll:165 - <==        Row: 479383666565320704, 1518148467383, 1518148467383, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,250 [restartedMain] TRACE fetchAll:165 - <==        Row: 479417456406827008, 1518156523509, 1518156523509, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,250 [restartedMain] TRACE fetchAll:165 - <==        Row: 479418251793666048, 1518156713144, 1518156713144, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,250 [restartedMain] TRACE fetchAll:165 - <==        Row: 479422942858448896, 1518157831581, 1518157831581, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,251 [restartedMain] TRACE fetchAll:165 - <==        Row: 480189252747923456, 1518340534096, 1518340534096, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,251 [restartedMain] TRACE fetchAll:165 - <==        Row: 480192929873268736, 1518341410791, 1518341410791, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,251 [restartedMain] TRACE fetchAll:165 - <==        Row: 480194975271751680, 1518341898452, 1518341898452, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,252 [restartedMain] TRACE fetchAll:165 - <==        Row: 480206339134459904, 1518344607808, 1518344607808, 0, null, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,252 [restartedMain] TRACE fetchAll:165 - <==        Row: 480207598352601088, 1518344908029, 1518344908029, 0, null, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:38:14,252 [restartedMain] DEBUG fetchAll:159 - <==      Total: 40
+2018-02-12 17:38:14,390 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.AccountController.login(com.chen.demo.requests.AccountLoginRequest) throws java.lang.Exception
+2018-02-12 17:38:14,394 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.add(com.chen.demo.vos.UserVo,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2018-02-12 17:38:14,394 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user/{id}],methods=[DELETE]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.delete(java.lang.Long) throws com.chen.demo.exceptions.BusinessException
+2018-02-12 17:38:14,395 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[GET]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.list()
+2018-02-12 17:38:14,395 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user/{id}],methods=[PUT]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.edit(java.lang.Long,com.chen.demo.vos.UserVo) throws com.chen.demo.exceptions.BusinessException,java.lang.Exception
+2018-02-12 17:38:14,395 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user/{id}],methods=[GET]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.info(java.lang.Long) throws com.chen.demo.exceptions.BusinessException
+2018-02-12 17:38:14,398 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-12 17:38:14,398 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-12 17:38:14,483 [restartedMain]  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44d3e8ef: startup date [Mon Feb 12 17:38:10 CST 2018]; root of context hierarchy
+2018-02-12 17:38:14,534 [restartedMain]  INFO ExceptionHandlerExceptionResolver:273 - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-12 17:38:15,146 [restartedMain]  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-02-12 17:38:15,209 [restartedMain]  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-02-12 17:38:15,287 [restartedMain]  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-02-12 17:38:15,292 [restartedMain]  INFO DemoApplication:57 - Started DemoApplication in 5.206 seconds (JVM running for 6.379)
+2018-02-12 17:39:57,385 [http-nio-8080-exec-1]  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-12 17:39:57,426 [http-nio-8080-exec-1]  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2018-02-12 17:39:57,485 [http-nio-8080-exec-1]  INFO LogManager:60 - time       : 2018-02-12 17:39:57
+2018-02-12 17:39:57,486 [http-nio-8080-exec-1]  INFO LogManager:61 - url        : http://localhost:8080/user
+2018-02-12 17:39:57,486 [http-nio-8080-exec-1]  INFO LogManager:62 - uri        : /user
+2018-02-12 17:39:57,486 [http-nio-8080-exec-1]  INFO LogManager:63 - httpMethod : POST
+2018-02-12 17:39:57,486 [http-nio-8080-exec-1]  INFO LogManager:64 - mediaType  : application/json
+2018-02-12 17:39:57,490 [http-nio-8080-exec-1]  INFO LogManager:65 - headers    : content-type:application/json,cache-control:no-cache,postman-token:6c3178fb-d008-4f3e-ad0c-7890b3d412a8,user-agent:PostmanRuntime/7.1.1,accept:*/*,host:localhost:8080,accept-encoding:gzip, deflate,content-length:50,connection:keep-alive
+2018-02-12 17:39:57,491 [http-nio-8080-exec-1]  INFO LogManager:66 - ip         : 0:0:0:0:0:0:0:1
+2018-02-12 17:39:57,491 [http-nio-8080-exec-1]  INFO LogManager:67 - controller : com.chen.demo.controllers.UserController
+2018-02-12 17:39:57,491 [http-nio-8080-exec-1]  INFO LogManager:68 - method     : add
+2018-02-12 17:39:57,493 [http-nio-8080-exec-1]  INFO LogManager:69 - params     : {}
+2018-02-12 17:39:57,493 [http-nio-8080-exec-1]  INFO LogManager:70 - voParam    : {"username":"name","phone":"18758324519","type":null,"id":null,"createTime":null,"updateTime":null,"isDeleted":null,"isEnable":null}
+2018-02-12 17:39:57,496 [http-nio-8080-exec-1]  INFO LogManager:75 - result     : {"code":1001,"message":"用户名长度在6到20之间","systemTime":1518428397495,"data":null}
+2018-02-12 17:39:57,496 [http-nio-8080-exec-1]  INFO LogManager:79 - Exception  : 
+com.chen.demo.exceptions.BusinessException: 用户名长度在6到20之间
+	at com.chen.demo.aops.ValidateManager.validate(ValidateManager.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:611)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:43)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:51)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.chen.demo.aops.LogManager.around(LogManager.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:618)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.chen.demo.controllers.UserController$$EnhancerBySpringCGLIB$$d42c5038.add(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-12 17:39:57,498 [http-nio-8080-exec-1]  INFO LogManager:82 - exeTime    : 18
+2018-02-12 17:40:03,571 [http-nio-8080-exec-3]  INFO LogManager:60 - time       : 2018-02-12 17:40:03
+2018-02-12 17:40:03,571 [http-nio-8080-exec-3]  INFO LogManager:61 - url        : http://localhost:8080/user
+2018-02-12 17:40:03,571 [http-nio-8080-exec-3]  INFO LogManager:62 - uri        : /user
+2018-02-12 17:40:03,572 [http-nio-8080-exec-3]  INFO LogManager:63 - httpMethod : POST
+2018-02-12 17:40:03,572 [http-nio-8080-exec-3]  INFO LogManager:64 - mediaType  : application/json
+2018-02-12 17:40:03,572 [http-nio-8080-exec-3]  INFO LogManager:65 - headers    : content-type:application/json,cache-control:no-cache,postman-token:5eb7fa4d-567e-4318-af47-2ccb1b4b4875,user-agent:PostmanRuntime/7.1.1,accept:*/*,host:localhost:8080,accept-encoding:gzip, deflate,content-length:50,connection:keep-alive
+2018-02-12 17:40:03,572 [http-nio-8080-exec-3]  INFO LogManager:66 - ip         : 0:0:0:0:0:0:0:1
+2018-02-12 17:40:03,573 [http-nio-8080-exec-3]  INFO LogManager:67 - controller : com.chen.demo.controllers.UserController
+2018-02-12 17:40:03,573 [http-nio-8080-exec-3]  INFO LogManager:68 - method     : add
+2018-02-12 17:40:03,573 [http-nio-8080-exec-3]  INFO LogManager:69 - params     : {}
+2018-02-12 17:40:03,573 [http-nio-8080-exec-3]  INFO LogManager:70 - voParam    : {"username":"name","phone":"1875832451x","type":null,"id":null,"createTime":null,"updateTime":null,"isDeleted":null,"isEnable":null}
+2018-02-12 17:40:03,574 [http-nio-8080-exec-3]  INFO LogManager:75 - result     : {"code":1001,"message":"用户名长度在6到20之间, ","systemTime":1518428403574,"data":null}
+2018-02-12 17:40:03,574 [http-nio-8080-exec-3]  INFO LogManager:79 - Exception  : 
+com.chen.demo.exceptions.BusinessException: 用户名长度在6到20之间, 
+	at com.chen.demo.aops.ValidateManager.validate(ValidateManager.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:611)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:43)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:51)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.chen.demo.aops.LogManager.around(LogManager.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:618)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.chen.demo.controllers.UserController$$EnhancerBySpringCGLIB$$d42c5038.add(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-12 17:40:03,575 [http-nio-8080-exec-3]  INFO LogManager:82 - exeTime    : 5
+2018-02-12 17:45:12,281 [Thread-21]  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44d3e8ef: startup date [Mon Feb 12 17:38:10 CST 2018]; root of context hierarchy
+2018-02-12 17:45:12,289 [Thread-21]  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-02-12 17:45:16,853 [restartedMain]  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 17302 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-02-12 17:45:16,855 [restartedMain]  INFO DemoApplication:597 - The following profiles are active: dev
+2018-02-12 17:45:16,960 [background-preinit]  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-02-12 17:45:17,012 [restartedMain]  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73ff31f5: startup date [Mon Feb 12 17:45:17 CST 2018]; root of context hierarchy
+2018-02-12 17:45:17,623 [restartedMain]  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-12 17:45:18,447 [restartedMain]  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-02-12 17:45:18,522 [localhost-startStop-1]  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1513 ms
+2018-02-12 17:45:18,666 [localhost-startStop-1]  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to []
+2018-02-12 17:45:18,667 [localhost-startStop-1]  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-12 17:45:18,667 [localhost-startStop-1]  INFO ServletRegistrationBean:193 - Servlet dispatcherServlet was not registered (possibly already registered?)
+2018-02-12 17:45:18,669 [localhost-startStop-1]  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-12 17:45:18,724 [restartedMain]  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.services.imp.AccountServiceImp.setBaseMapper()
+2018-02-12 17:45:19,030 [restartedMain]  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-02-12 17:45:19,481 [restartedMain] DEBUG fetchAll:159 - ==>  Preparing: SELECT * FROM `user` WHERE isDeleted = 0 
+2018-02-12 17:45:19,584 [restartedMain] DEBUG fetchAll:159 - ==> Parameters: 
+2018-02-12 17:45:19,599 [restartedMain] TRACE fetchAll:165 - <==    Columns: id, createTime, updateTime, isDeleted, username, password, otherStr, type, email, phone, realName, isEnable
+2018-02-12 17:45:19,600 [restartedMain] TRACE fetchAll:165 - <==        Row: 11, null, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:45:19,602 [restartedMain] TRACE fetchAll:165 - <==        Row: 12, null, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:45:19,603 [restartedMain] TRACE fetchAll:165 - <==        Row: 13, 1515999327672, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:45:19,604 [restartedMain] TRACE fetchAll:165 - <==        Row: 14, 1515999400176, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:45:19,605 [restartedMain] TRACE fetchAll:165 - <==        Row: 16, 1517758965512, 1517758965512, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,605 [restartedMain] TRACE fetchAll:165 - <==        Row: 17, 1517759005001, 1517759005001, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,606 [restartedMain] TRACE fetchAll:165 - <==        Row: 18, 1517759108852, 1517759108852, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,607 [restartedMain] TRACE fetchAll:165 - <==        Row: 19, 1517759580536, 1517759580536, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,607 [restartedMain] TRACE fetchAll:165 - <==        Row: 20, 1517759679115, 1517759679115, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,608 [restartedMain] TRACE fetchAll:165 - <==        Row: 21, 1517759865192, 1517759865192, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,608 [restartedMain] TRACE fetchAll:165 - <==        Row: 22, 1517760228714, 1517760228714, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,609 [restartedMain] TRACE fetchAll:165 - <==        Row: 23, 1517760348892, 1517760348892, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,609 [restartedMain] TRACE fetchAll:165 - <==        Row: 24, 1517760415756, 1517760415756, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,609 [restartedMain] TRACE fetchAll:165 - <==        Row: 25, 1517760629727, 1517760629727, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,610 [restartedMain] TRACE fetchAll:165 - <==        Row: 26, 1517796214543, 1517796214543, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,610 [restartedMain] TRACE fetchAll:165 - <==        Row: 478024553142947840, 1517824429492, null, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,613 [restartedMain] TRACE fetchAll:165 - <==        Row: 478025000834568192, 1517824536230, 1517824536230, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,613 [restartedMain] TRACE fetchAll:165 - <==        Row: 478025919886266368, 1517824755349, 1517825339042, 0, username1, null, null, USER, null, 187583245191, null, 1
+2018-02-12 17:45:19,614 [restartedMain] TRACE fetchAll:165 - <==        Row: 478635828722012160, 1517970168947, 1517970168947, 0, admin, fe39a8480765a0806e83e21e9fa6cd5f, MIyTNMnS82dQ, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:45:19,614 [restartedMain] TRACE fetchAll:165 - <==        Row: 478693820687454208, 1517983995309, 1517983995309, 0, admin, b8185c6190e391feb6323a549d37a18c, G41kbw9OIacj, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:45:19,614 [restartedMain] TRACE fetchAll:165 - <==        Row: 478693832175652864, 1517983998048, 1517983998048, 0, admin, b7415654a04c1745bd02dcb4abdd285b, 33NCFmpNm218, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:45:19,615 [restartedMain] TRACE fetchAll:165 - <==        Row: 478696277912064000, 1517984581157, 1517984581157, 0, admin, ab69323c52c2c968f695105e682df70c, KAbapEYpsvO9, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:45:19,615 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700246126301184, 1517985527253, 1517985527253, 0, admin, a1bea78c1b1077ae7a9ca6f216a4c731, ZIMN5nGLm7Oa, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:45:19,615 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700252078018560, 1517985528672, 1517985528672, 0, admin, b11de202d9a4e751b2708a4cb9beb45c, NlCaK9NnCQYc, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:45:19,616 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700652155899904, 1517985624058, 1517985624058, 0, admin, f7b15066628edd2f67850d47acc3406c, dVSpEZSnWckk, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:45:19,616 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700659382685696, 1517985625781, 1517985625781, 0, null, d8240c22a6494a6edccc5300e098e5d0, Fd4JrIKiHVGa, USER, 765485378@qq.com, 18758324519, null, 1
+2018-02-12 17:45:19,616 [restartedMain] TRACE fetchAll:165 - <==        Row: 478701575297044480, 1517985844152, 1517985844152, 0, admin, 38389c8de3e1b3609732fe99fc69d307, nefwZT4pZwE9, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:45:19,617 [restartedMain] TRACE fetchAll:165 - <==        Row: 478701583106838528, 1517985846014, 1517985846014, 0, null, 0c7a75a4292d56fa59773378602f7e28, 6nRLMK8LAHr0, USER, 765485378@qq.com, 18758324519, null, 1
+2018-02-12 17:45:19,617 [restartedMain] TRACE fetchAll:165 - <==        Row: 479002122017312768, 1518057500074, 1518057500074, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,618 [restartedMain] TRACE fetchAll:165 - <==        Row: 479155592900907008, 1518094090384, 1518094090384, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,618 [restartedMain] TRACE fetchAll:165 - <==        Row: 479175157760397312, 1518098755010, 1518098755010, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,618 [restartedMain] TRACE fetchAll:165 - <==        Row: 479383666565320704, 1518148467383, 1518148467383, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,619 [restartedMain] TRACE fetchAll:165 - <==        Row: 479417456406827008, 1518156523509, 1518156523509, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,619 [restartedMain] TRACE fetchAll:165 - <==        Row: 479418251793666048, 1518156713144, 1518156713144, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,619 [restartedMain] TRACE fetchAll:165 - <==        Row: 479422942858448896, 1518157831581, 1518157831581, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,620 [restartedMain] TRACE fetchAll:165 - <==        Row: 480189252747923456, 1518340534096, 1518340534096, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,620 [restartedMain] TRACE fetchAll:165 - <==        Row: 480192929873268736, 1518341410791, 1518341410791, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,621 [restartedMain] TRACE fetchAll:165 - <==        Row: 480194975271751680, 1518341898452, 1518341898452, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,621 [restartedMain] TRACE fetchAll:165 - <==        Row: 480206339134459904, 1518344607808, 1518344607808, 0, null, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,621 [restartedMain] TRACE fetchAll:165 - <==        Row: 480207598352601088, 1518344908029, 1518344908029, 0, null, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,622 [restartedMain] DEBUG fetchAll:159 - <==      Total: 40
+2018-02-12 17:45:19,623 [restartedMain] DEBUG fetchAll:159 - ==>  Preparing: SELECT * FROM `user` WHERE isDeleted = 0 
+2018-02-12 17:45:19,623 [restartedMain] DEBUG fetchAll:159 - ==> Parameters: 
+2018-02-12 17:45:19,625 [restartedMain] TRACE fetchAll:165 - <==    Columns: id, createTime, updateTime, isDeleted, username, password, otherStr, type, email, phone, realName, isEnable
+2018-02-12 17:45:19,625 [restartedMain] TRACE fetchAll:165 - <==        Row: 11, null, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:45:19,626 [restartedMain] TRACE fetchAll:165 - <==        Row: 12, null, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:45:19,626 [restartedMain] TRACE fetchAll:165 - <==        Row: 13, 1515999327672, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:45:19,626 [restartedMain] TRACE fetchAll:165 - <==        Row: 14, 1515999400176, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:45:19,627 [restartedMain] TRACE fetchAll:165 - <==        Row: 16, 1517758965512, 1517758965512, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,627 [restartedMain] TRACE fetchAll:165 - <==        Row: 17, 1517759005001, 1517759005001, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,627 [restartedMain] TRACE fetchAll:165 - <==        Row: 18, 1517759108852, 1517759108852, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,628 [restartedMain] TRACE fetchAll:165 - <==        Row: 19, 1517759580536, 1517759580536, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,628 [restartedMain] TRACE fetchAll:165 - <==        Row: 20, 1517759679115, 1517759679115, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,628 [restartedMain] TRACE fetchAll:165 - <==        Row: 21, 1517759865192, 1517759865192, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,629 [restartedMain] TRACE fetchAll:165 - <==        Row: 22, 1517760228714, 1517760228714, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,629 [restartedMain] TRACE fetchAll:165 - <==        Row: 23, 1517760348892, 1517760348892, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,629 [restartedMain] TRACE fetchAll:165 - <==        Row: 24, 1517760415756, 1517760415756, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,630 [restartedMain] TRACE fetchAll:165 - <==        Row: 25, 1517760629727, 1517760629727, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,630 [restartedMain] TRACE fetchAll:165 - <==        Row: 26, 1517796214543, 1517796214543, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:45:19,630 [restartedMain] TRACE fetchAll:165 - <==        Row: 478024553142947840, 1517824429492, null, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,631 [restartedMain] TRACE fetchAll:165 - <==        Row: 478025000834568192, 1517824536230, 1517824536230, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,631 [restartedMain] TRACE fetchAll:165 - <==        Row: 478025919886266368, 1517824755349, 1517825339042, 0, username1, null, null, USER, null, 187583245191, null, 1
+2018-02-12 17:45:19,631 [restartedMain] TRACE fetchAll:165 - <==        Row: 478635828722012160, 1517970168947, 1517970168947, 0, admin, fe39a8480765a0806e83e21e9fa6cd5f, MIyTNMnS82dQ, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:45:19,632 [restartedMain] TRACE fetchAll:165 - <==        Row: 478693820687454208, 1517983995309, 1517983995309, 0, admin, b8185c6190e391feb6323a549d37a18c, G41kbw9OIacj, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:45:19,632 [restartedMain] TRACE fetchAll:165 - <==        Row: 478693832175652864, 1517983998048, 1517983998048, 0, admin, b7415654a04c1745bd02dcb4abdd285b, 33NCFmpNm218, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:45:19,632 [restartedMain] TRACE fetchAll:165 - <==        Row: 478696277912064000, 1517984581157, 1517984581157, 0, admin, ab69323c52c2c968f695105e682df70c, KAbapEYpsvO9, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:45:19,632 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700246126301184, 1517985527253, 1517985527253, 0, admin, a1bea78c1b1077ae7a9ca6f216a4c731, ZIMN5nGLm7Oa, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:45:19,633 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700252078018560, 1517985528672, 1517985528672, 0, admin, b11de202d9a4e751b2708a4cb9beb45c, NlCaK9NnCQYc, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:45:19,633 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700652155899904, 1517985624058, 1517985624058, 0, admin, f7b15066628edd2f67850d47acc3406c, dVSpEZSnWckk, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:45:19,634 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700659382685696, 1517985625781, 1517985625781, 0, null, d8240c22a6494a6edccc5300e098e5d0, Fd4JrIKiHVGa, USER, 765485378@qq.com, 18758324519, null, 1
+2018-02-12 17:45:19,634 [restartedMain] TRACE fetchAll:165 - <==        Row: 478701575297044480, 1517985844152, 1517985844152, 0, admin, 38389c8de3e1b3609732fe99fc69d307, nefwZT4pZwE9, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:45:19,635 [restartedMain] TRACE fetchAll:165 - <==        Row: 478701583106838528, 1517985846014, 1517985846014, 0, null, 0c7a75a4292d56fa59773378602f7e28, 6nRLMK8LAHr0, USER, 765485378@qq.com, 18758324519, null, 1
+2018-02-12 17:45:19,635 [restartedMain] TRACE fetchAll:165 - <==        Row: 479002122017312768, 1518057500074, 1518057500074, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,636 [restartedMain] TRACE fetchAll:165 - <==        Row: 479155592900907008, 1518094090384, 1518094090384, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,636 [restartedMain] TRACE fetchAll:165 - <==        Row: 479175157760397312, 1518098755010, 1518098755010, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,636 [restartedMain] TRACE fetchAll:165 - <==        Row: 479383666565320704, 1518148467383, 1518148467383, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,637 [restartedMain] TRACE fetchAll:165 - <==        Row: 479417456406827008, 1518156523509, 1518156523509, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,637 [restartedMain] TRACE fetchAll:165 - <==        Row: 479418251793666048, 1518156713144, 1518156713144, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,638 [restartedMain] TRACE fetchAll:165 - <==        Row: 479422942858448896, 1518157831581, 1518157831581, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,639 [restartedMain] TRACE fetchAll:165 - <==        Row: 480189252747923456, 1518340534096, 1518340534096, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,639 [restartedMain] TRACE fetchAll:165 - <==        Row: 480192929873268736, 1518341410791, 1518341410791, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,640 [restartedMain] TRACE fetchAll:165 - <==        Row: 480194975271751680, 1518341898452, 1518341898452, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,640 [restartedMain] TRACE fetchAll:165 - <==        Row: 480206339134459904, 1518344607808, 1518344607808, 0, null, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,640 [restartedMain] TRACE fetchAll:165 - <==        Row: 480207598352601088, 1518344908029, 1518344908029, 0, null, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:45:19,641 [restartedMain] DEBUG fetchAll:159 - <==      Total: 40
+2018-02-12 17:45:19,742 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.AccountController.login(com.chen.demo.requests.AccountLoginRequest) throws java.lang.Exception
+2018-02-12 17:45:19,746 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.add(com.chen.demo.vos.UserVo,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2018-02-12 17:45:19,746 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user/{id}],methods=[DELETE]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.delete(java.lang.Long) throws com.chen.demo.exceptions.BusinessException
+2018-02-12 17:45:19,746 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[GET]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.list()
+2018-02-12 17:45:19,747 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user/{id}],methods=[PUT]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.edit(java.lang.Long,com.chen.demo.vos.UserVo) throws com.chen.demo.exceptions.BusinessException,java.lang.Exception
+2018-02-12 17:45:19,747 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user/{id}],methods=[GET]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.info(java.lang.Long) throws com.chen.demo.exceptions.BusinessException
+2018-02-12 17:45:19,749 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-12 17:45:19,750 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-12 17:45:19,832 [restartedMain]  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73ff31f5: startup date [Mon Feb 12 17:45:17 CST 2018]; root of context hierarchy
+2018-02-12 17:45:19,865 [restartedMain]  INFO ExceptionHandlerExceptionResolver:273 - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-12 17:45:20,374 [restartedMain]  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-02-12 17:45:20,434 [restartedMain]  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-02-12 17:45:20,500 [restartedMain]  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-02-12 17:45:20,509 [restartedMain]  INFO DemoApplication:57 - Started DemoApplication in 4.085 seconds (JVM running for 4.976)
+2018-02-12 17:45:44,869 [http-nio-8080-exec-1]  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-12 17:45:44,908 [http-nio-8080-exec-1]  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2018-02-12 17:45:44,939 [http-nio-8080-exec-1]  INFO LogManager:60 - time       : 2018-02-12 17:45:44
+2018-02-12 17:45:44,940 [http-nio-8080-exec-1]  INFO LogManager:61 - url        : http://localhost:8080/user
+2018-02-12 17:45:44,940 [http-nio-8080-exec-1]  INFO LogManager:62 - uri        : /user
+2018-02-12 17:45:44,940 [http-nio-8080-exec-1]  INFO LogManager:63 - httpMethod : POST
+2018-02-12 17:45:44,940 [http-nio-8080-exec-1]  INFO LogManager:64 - mediaType  : application/json
+2018-02-12 17:45:44,943 [http-nio-8080-exec-1]  INFO LogManager:65 - headers    : content-type:application/json,cache-control:no-cache,postman-token:cd60e42a-d3d7-47c6-8827-f573f5e91742,user-agent:PostmanRuntime/7.1.1,accept:*/*,host:localhost:8080,accept-encoding:gzip, deflate,content-length:50,connection:keep-alive
+2018-02-12 17:45:44,943 [http-nio-8080-exec-1]  INFO LogManager:66 - ip         : 0:0:0:0:0:0:0:1
+2018-02-12 17:45:44,943 [http-nio-8080-exec-1]  INFO LogManager:67 - controller : com.chen.demo.controllers.UserController
+2018-02-12 17:45:44,943 [http-nio-8080-exec-1]  INFO LogManager:68 - method     : add
+2018-02-12 17:45:44,944 [http-nio-8080-exec-1]  INFO LogManager:69 - params     : {}
+2018-02-12 17:45:44,944 [http-nio-8080-exec-1]  INFO LogManager:70 - voParam    : {"username":"name","phone":"1875832451x","type":null,"id":null,"createTime":null,"updateTime":null,"isDeleted":null,"isEnable":null}
+2018-02-12 17:45:44,947 [http-nio-8080-exec-1]  INFO LogManager:75 - result     : {"code":1001,"message":"用户名长度在6到20之间, ","systemTime":1518428744946,"data":null}
+2018-02-12 17:45:44,948 [http-nio-8080-exec-1]  INFO LogManager:79 - Exception  : 
+com.chen.demo.exceptions.BusinessException: 用户名长度在6到20之间, 
+	at com.chen.demo.aops.ValidateManager.validate(ValidateManager.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:611)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:43)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:51)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.chen.demo.aops.LogManager.around(LogManager.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:618)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.chen.demo.controllers.UserController$$EnhancerBySpringCGLIB$$327b4a1d.add(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-12 17:45:44,949 [http-nio-8080-exec-1]  INFO LogManager:82 - exeTime    : 13
+2018-02-12 17:49:52,425 [Thread-18]  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73ff31f5: startup date [Mon Feb 12 17:45:17 CST 2018]; root of context hierarchy
+2018-02-12 17:49:52,432 [Thread-18]  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-02-12 17:49:56,551 [restartedMain]  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 17308 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-02-12 17:49:56,553 [restartedMain]  INFO DemoApplication:597 - The following profiles are active: dev
+2018-02-12 17:49:56,640 [background-preinit]  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-02-12 17:49:56,772 [restartedMain]  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@626295ef: startup date [Mon Feb 12 17:49:56 CST 2018]; root of context hierarchy
+2018-02-12 17:49:57,639 [restartedMain]  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-12 17:49:58,410 [restartedMain]  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-02-12 17:49:58,503 [localhost-startStop-1]  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1736 ms
+2018-02-12 17:49:58,686 [localhost-startStop-1]  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to []
+2018-02-12 17:49:58,688 [localhost-startStop-1]  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-12 17:49:58,688 [localhost-startStop-1]  INFO ServletRegistrationBean:193 - Servlet dispatcherServlet was not registered (possibly already registered?)
+2018-02-12 17:49:58,708 [localhost-startStop-1]  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-12 17:49:58,751 [restartedMain]  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.services.imp.AccountServiceImp.setBaseMapper()
+2018-02-12 17:49:59,075 [restartedMain]  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-02-12 17:49:59,529 [restartedMain] DEBUG fetchAll:159 - ==>  Preparing: SELECT * FROM `user` WHERE isDeleted = 0 
+2018-02-12 17:49:59,618 [restartedMain] DEBUG fetchAll:159 - ==> Parameters: 
+2018-02-12 17:49:59,630 [restartedMain] TRACE fetchAll:165 - <==    Columns: id, createTime, updateTime, isDeleted, username, password, otherStr, type, email, phone, realName, isEnable
+2018-02-12 17:49:59,631 [restartedMain] TRACE fetchAll:165 - <==        Row: 11, null, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:49:59,634 [restartedMain] TRACE fetchAll:165 - <==        Row: 12, null, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:49:59,635 [restartedMain] TRACE fetchAll:165 - <==        Row: 13, 1515999327672, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:49:59,635 [restartedMain] TRACE fetchAll:165 - <==        Row: 14, 1515999400176, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:49:59,635 [restartedMain] TRACE fetchAll:165 - <==        Row: 16, 1517758965512, 1517758965512, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,636 [restartedMain] TRACE fetchAll:165 - <==        Row: 17, 1517759005001, 1517759005001, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,637 [restartedMain] TRACE fetchAll:165 - <==        Row: 18, 1517759108852, 1517759108852, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,637 [restartedMain] TRACE fetchAll:165 - <==        Row: 19, 1517759580536, 1517759580536, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,638 [restartedMain] TRACE fetchAll:165 - <==        Row: 20, 1517759679115, 1517759679115, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,638 [restartedMain] TRACE fetchAll:165 - <==        Row: 21, 1517759865192, 1517759865192, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,638 [restartedMain] TRACE fetchAll:165 - <==        Row: 22, 1517760228714, 1517760228714, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,639 [restartedMain] TRACE fetchAll:165 - <==        Row: 23, 1517760348892, 1517760348892, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,639 [restartedMain] TRACE fetchAll:165 - <==        Row: 24, 1517760415756, 1517760415756, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,640 [restartedMain] TRACE fetchAll:165 - <==        Row: 25, 1517760629727, 1517760629727, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,640 [restartedMain] TRACE fetchAll:165 - <==        Row: 26, 1517796214543, 1517796214543, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,640 [restartedMain] TRACE fetchAll:165 - <==        Row: 478024553142947840, 1517824429492, null, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,643 [restartedMain] TRACE fetchAll:165 - <==        Row: 478025000834568192, 1517824536230, 1517824536230, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,644 [restartedMain] TRACE fetchAll:165 - <==        Row: 478025919886266368, 1517824755349, 1517825339042, 0, username1, null, null, USER, null, 187583245191, null, 1
+2018-02-12 17:49:59,644 [restartedMain] TRACE fetchAll:165 - <==        Row: 478635828722012160, 1517970168947, 1517970168947, 0, admin, fe39a8480765a0806e83e21e9fa6cd5f, MIyTNMnS82dQ, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:49:59,644 [restartedMain] TRACE fetchAll:165 - <==        Row: 478693820687454208, 1517983995309, 1517983995309, 0, admin, b8185c6190e391feb6323a549d37a18c, G41kbw9OIacj, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:49:59,645 [restartedMain] TRACE fetchAll:165 - <==        Row: 478693832175652864, 1517983998048, 1517983998048, 0, admin, b7415654a04c1745bd02dcb4abdd285b, 33NCFmpNm218, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:49:59,645 [restartedMain] TRACE fetchAll:165 - <==        Row: 478696277912064000, 1517984581157, 1517984581157, 0, admin, ab69323c52c2c968f695105e682df70c, KAbapEYpsvO9, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:49:59,646 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700246126301184, 1517985527253, 1517985527253, 0, admin, a1bea78c1b1077ae7a9ca6f216a4c731, ZIMN5nGLm7Oa, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:49:59,646 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700252078018560, 1517985528672, 1517985528672, 0, admin, b11de202d9a4e751b2708a4cb9beb45c, NlCaK9NnCQYc, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:49:59,646 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700652155899904, 1517985624058, 1517985624058, 0, admin, f7b15066628edd2f67850d47acc3406c, dVSpEZSnWckk, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:49:59,647 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700659382685696, 1517985625781, 1517985625781, 0, null, d8240c22a6494a6edccc5300e098e5d0, Fd4JrIKiHVGa, USER, 765485378@qq.com, 18758324519, null, 1
+2018-02-12 17:49:59,647 [restartedMain] TRACE fetchAll:165 - <==        Row: 478701575297044480, 1517985844152, 1517985844152, 0, admin, 38389c8de3e1b3609732fe99fc69d307, nefwZT4pZwE9, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:49:59,648 [restartedMain] TRACE fetchAll:165 - <==        Row: 478701583106838528, 1517985846014, 1517985846014, 0, null, 0c7a75a4292d56fa59773378602f7e28, 6nRLMK8LAHr0, USER, 765485378@qq.com, 18758324519, null, 1
+2018-02-12 17:49:59,648 [restartedMain] TRACE fetchAll:165 - <==        Row: 479002122017312768, 1518057500074, 1518057500074, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,648 [restartedMain] TRACE fetchAll:165 - <==        Row: 479155592900907008, 1518094090384, 1518094090384, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,649 [restartedMain] TRACE fetchAll:165 - <==        Row: 479175157760397312, 1518098755010, 1518098755010, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,649 [restartedMain] TRACE fetchAll:165 - <==        Row: 479383666565320704, 1518148467383, 1518148467383, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,649 [restartedMain] TRACE fetchAll:165 - <==        Row: 479417456406827008, 1518156523509, 1518156523509, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,650 [restartedMain] TRACE fetchAll:165 - <==        Row: 479418251793666048, 1518156713144, 1518156713144, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,650 [restartedMain] TRACE fetchAll:165 - <==        Row: 479422942858448896, 1518157831581, 1518157831581, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,650 [restartedMain] TRACE fetchAll:165 - <==        Row: 480189252747923456, 1518340534096, 1518340534096, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,650 [restartedMain] TRACE fetchAll:165 - <==        Row: 480192929873268736, 1518341410791, 1518341410791, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,651 [restartedMain] TRACE fetchAll:165 - <==        Row: 480194975271751680, 1518341898452, 1518341898452, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,651 [restartedMain] TRACE fetchAll:165 - <==        Row: 480206339134459904, 1518344607808, 1518344607808, 0, null, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,651 [restartedMain] TRACE fetchAll:165 - <==        Row: 480207598352601088, 1518344908029, 1518344908029, 0, null, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,652 [restartedMain] DEBUG fetchAll:159 - <==      Total: 40
+2018-02-12 17:49:59,653 [restartedMain] DEBUG fetchAll:159 - ==>  Preparing: SELECT * FROM `user` WHERE isDeleted = 0 
+2018-02-12 17:49:59,654 [restartedMain] DEBUG fetchAll:159 - ==> Parameters: 
+2018-02-12 17:49:59,655 [restartedMain] TRACE fetchAll:165 - <==    Columns: id, createTime, updateTime, isDeleted, username, password, otherStr, type, email, phone, realName, isEnable
+2018-02-12 17:49:59,655 [restartedMain] TRACE fetchAll:165 - <==        Row: 11, null, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:49:59,655 [restartedMain] TRACE fetchAll:165 - <==        Row: 12, null, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:49:59,656 [restartedMain] TRACE fetchAll:165 - <==        Row: 13, 1515999327672, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:49:59,656 [restartedMain] TRACE fetchAll:165 - <==        Row: 14, 1515999400176, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-12 17:49:59,656 [restartedMain] TRACE fetchAll:165 - <==        Row: 16, 1517758965512, 1517758965512, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,657 [restartedMain] TRACE fetchAll:165 - <==        Row: 17, 1517759005001, 1517759005001, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,657 [restartedMain] TRACE fetchAll:165 - <==        Row: 18, 1517759108852, 1517759108852, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,657 [restartedMain] TRACE fetchAll:165 - <==        Row: 19, 1517759580536, 1517759580536, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,657 [restartedMain] TRACE fetchAll:165 - <==        Row: 20, 1517759679115, 1517759679115, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,658 [restartedMain] TRACE fetchAll:165 - <==        Row: 21, 1517759865192, 1517759865192, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,658 [restartedMain] TRACE fetchAll:165 - <==        Row: 22, 1517760228714, 1517760228714, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,658 [restartedMain] TRACE fetchAll:165 - <==        Row: 23, 1517760348892, 1517760348892, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,658 [restartedMain] TRACE fetchAll:165 - <==        Row: 24, 1517760415756, 1517760415756, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,658 [restartedMain] TRACE fetchAll:165 - <==        Row: 25, 1517760629727, 1517760629727, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,659 [restartedMain] TRACE fetchAll:165 - <==        Row: 26, 1517796214543, 1517796214543, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-12 17:49:59,659 [restartedMain] TRACE fetchAll:165 - <==        Row: 478024553142947840, 1517824429492, null, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,659 [restartedMain] TRACE fetchAll:165 - <==        Row: 478025000834568192, 1517824536230, 1517824536230, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,660 [restartedMain] TRACE fetchAll:165 - <==        Row: 478025919886266368, 1517824755349, 1517825339042, 0, username1, null, null, USER, null, 187583245191, null, 1
+2018-02-12 17:49:59,660 [restartedMain] TRACE fetchAll:165 - <==        Row: 478635828722012160, 1517970168947, 1517970168947, 0, admin, fe39a8480765a0806e83e21e9fa6cd5f, MIyTNMnS82dQ, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:49:59,660 [restartedMain] TRACE fetchAll:165 - <==        Row: 478693820687454208, 1517983995309, 1517983995309, 0, admin, b8185c6190e391feb6323a549d37a18c, G41kbw9OIacj, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:49:59,660 [restartedMain] TRACE fetchAll:165 - <==        Row: 478693832175652864, 1517983998048, 1517983998048, 0, admin, b7415654a04c1745bd02dcb4abdd285b, 33NCFmpNm218, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:49:59,661 [restartedMain] TRACE fetchAll:165 - <==        Row: 478696277912064000, 1517984581157, 1517984581157, 0, admin, ab69323c52c2c968f695105e682df70c, KAbapEYpsvO9, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:49:59,661 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700246126301184, 1517985527253, 1517985527253, 0, admin, a1bea78c1b1077ae7a9ca6f216a4c731, ZIMN5nGLm7Oa, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:49:59,661 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700252078018560, 1517985528672, 1517985528672, 0, admin, b11de202d9a4e751b2708a4cb9beb45c, NlCaK9NnCQYc, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:49:59,661 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700652155899904, 1517985624058, 1517985624058, 0, admin, f7b15066628edd2f67850d47acc3406c, dVSpEZSnWckk, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:49:59,662 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700659382685696, 1517985625781, 1517985625781, 0, null, d8240c22a6494a6edccc5300e098e5d0, Fd4JrIKiHVGa, USER, 765485378@qq.com, 18758324519, null, 1
+2018-02-12 17:49:59,662 [restartedMain] TRACE fetchAll:165 - <==        Row: 478701575297044480, 1517985844152, 1517985844152, 0, admin, 38389c8de3e1b3609732fe99fc69d307, nefwZT4pZwE9, ADMIN, null, 18758324519, null, 1
+2018-02-12 17:49:59,662 [restartedMain] TRACE fetchAll:165 - <==        Row: 478701583106838528, 1517985846014, 1517985846014, 0, null, 0c7a75a4292d56fa59773378602f7e28, 6nRLMK8LAHr0, USER, 765485378@qq.com, 18758324519, null, 1
+2018-02-12 17:49:59,663 [restartedMain] TRACE fetchAll:165 - <==        Row: 479002122017312768, 1518057500074, 1518057500074, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,663 [restartedMain] TRACE fetchAll:165 - <==        Row: 479155592900907008, 1518094090384, 1518094090384, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,663 [restartedMain] TRACE fetchAll:165 - <==        Row: 479175157760397312, 1518098755010, 1518098755010, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,663 [restartedMain] TRACE fetchAll:165 - <==        Row: 479383666565320704, 1518148467383, 1518148467383, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,664 [restartedMain] TRACE fetchAll:165 - <==        Row: 479417456406827008, 1518156523509, 1518156523509, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,664 [restartedMain] TRACE fetchAll:165 - <==        Row: 479418251793666048, 1518156713144, 1518156713144, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,664 [restartedMain] TRACE fetchAll:165 - <==        Row: 479422942858448896, 1518157831581, 1518157831581, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,664 [restartedMain] TRACE fetchAll:165 - <==        Row: 480189252747923456, 1518340534096, 1518340534096, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,665 [restartedMain] TRACE fetchAll:165 - <==        Row: 480192929873268736, 1518341410791, 1518341410791, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,665 [restartedMain] TRACE fetchAll:165 - <==        Row: 480194975271751680, 1518341898452, 1518341898452, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,665 [restartedMain] TRACE fetchAll:165 - <==        Row: 480206339134459904, 1518344607808, 1518344607808, 0, null, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,665 [restartedMain] TRACE fetchAll:165 - <==        Row: 480207598352601088, 1518344908029, 1518344908029, 0, null, null, null, USER, null, 18758324519, null, 1
+2018-02-12 17:49:59,666 [restartedMain] DEBUG fetchAll:159 - <==      Total: 40
+2018-02-12 17:49:59,759 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.AccountController.login(com.chen.demo.requests.AccountLoginRequest) throws java.lang.Exception
+2018-02-12 17:49:59,763 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.add(com.chen.demo.vos.UserVo,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2018-02-12 17:49:59,764 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user/{id}],methods=[DELETE]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.delete(java.lang.Long) throws com.chen.demo.exceptions.BusinessException
+2018-02-12 17:49:59,764 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[GET]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.list()
+2018-02-12 17:49:59,765 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user/{id}],methods=[PUT]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.edit(java.lang.Long,com.chen.demo.vos.UserVo) throws com.chen.demo.exceptions.BusinessException,java.lang.Exception
+2018-02-12 17:49:59,765 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user/{id}],methods=[GET]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.info(java.lang.Long) throws com.chen.demo.exceptions.BusinessException
+2018-02-12 17:49:59,768 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-12 17:49:59,768 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-12 17:49:59,830 [restartedMain]  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@626295ef: startup date [Mon Feb 12 17:49:56 CST 2018]; root of context hierarchy
+2018-02-12 17:49:59,865 [restartedMain]  INFO ExceptionHandlerExceptionResolver:273 - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-12 17:50:00,378 [restartedMain]  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-02-12 17:50:00,425 [restartedMain]  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-02-12 17:50:00,482 [restartedMain]  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-02-12 17:50:00,487 [restartedMain]  INFO DemoApplication:57 - Started DemoApplication in 4.192 seconds (JVM running for 5.322)
+2018-02-12 17:50:03,957 [http-nio-8080-exec-2]  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-12 17:50:04,001 [http-nio-8080-exec-2]  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+2018-02-12 17:50:04,029 [http-nio-8080-exec-2]  INFO LogManager:60 - time       : 2018-02-12 17:50:04
+2018-02-12 17:50:04,030 [http-nio-8080-exec-2]  INFO LogManager:61 - url        : http://localhost:8080/user
+2018-02-12 17:50:04,030 [http-nio-8080-exec-2]  INFO LogManager:62 - uri        : /user
+2018-02-12 17:50:04,030 [http-nio-8080-exec-2]  INFO LogManager:63 - httpMethod : POST
+2018-02-12 17:50:04,030 [http-nio-8080-exec-2]  INFO LogManager:64 - mediaType  : application/json
+2018-02-12 17:50:04,032 [http-nio-8080-exec-2]  INFO LogManager:65 - headers    : content-type:application/json,cache-control:no-cache,postman-token:a9c8dba3-2bde-4cc0-8f65-3b5260b2fc9b,user-agent:PostmanRuntime/7.1.1,accept:*/*,host:localhost:8080,accept-encoding:gzip, deflate,content-length:50,connection:keep-alive
+2018-02-12 17:50:04,033 [http-nio-8080-exec-2]  INFO LogManager:66 - ip         : 0:0:0:0:0:0:0:1
+2018-02-12 17:50:04,033 [http-nio-8080-exec-2]  INFO LogManager:67 - controller : com.chen.demo.controllers.UserController
+2018-02-12 17:50:04,033 [http-nio-8080-exec-2]  INFO LogManager:68 - method     : add
+2018-02-12 17:50:04,034 [http-nio-8080-exec-2]  INFO LogManager:69 - params     : {}
+2018-02-12 17:50:04,034 [http-nio-8080-exec-2]  INFO LogManager:70 - voParam    : {"username":"name","phone":"1875832451x","type":null,"id":null,"createTime":null,"updateTime":null,"isDeleted":null,"isEnable":null}
+2018-02-12 17:50:04,036 [http-nio-8080-exec-2]  INFO LogManager:75 - result     : {"code":1001,"message":"用户名长度在6到20之间, 手机号码格式错误","systemTime":1518429004035,"data":null}
+2018-02-12 17:50:04,036 [http-nio-8080-exec-2]  INFO LogManager:79 - Exception  : 
+com.chen.demo.exceptions.BusinessException: 用户名长度在6到20之间, 手机号码格式错误
+	at com.chen.demo.aops.ValidateManager.validate(ValidateManager.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:611)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:43)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:51)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.chen.demo.aops.LogManager.around(LogManager.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:618)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.chen.demo.controllers.UserController$$EnhancerBySpringCGLIB$$54efa40e.add(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-12 17:50:04,038 [http-nio-8080-exec-2]  INFO LogManager:82 - exeTime    : 12

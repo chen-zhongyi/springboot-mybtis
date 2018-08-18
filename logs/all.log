@@ -1,0 +1,314 @@
+2018-02-26 14:12:55,423 [restartedMain]  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 1293 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-02-26 14:12:55,425 [restartedMain]  INFO DemoApplication:597 - The following profiles are active: dev
+2018-02-26 14:12:55,440 [background-preinit]  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-02-26 14:12:55,574 [restartedMain]  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4bd56c6a: startup date [Mon Feb 26 14:12:55 CST 2018]; root of context hierarchy
+2018-02-26 14:12:56,403 [restartedMain]  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-26 14:12:57,532 [restartedMain]  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-02-26 14:12:57,640 [localhost-startStop-1]  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2072 ms
+2018-02-26 14:12:57,827 [localhost-startStop-1]  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to []
+2018-02-26 14:12:57,831 [localhost-startStop-1]  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-26 14:12:57,831 [localhost-startStop-1]  INFO ServletRegistrationBean:193 - Servlet dispatcherServlet was not registered (possibly already registered?)
+2018-02-26 14:12:57,833 [localhost-startStop-1]  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-26 14:12:57,877 [restartedMain]  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.services.imp.AccountServiceImp.setBaseMapper()
+2018-02-26 14:12:58,359 [restartedMain]  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-02-26 14:12:58,559 [restartedMain]  WARN AnnotationConfigEmbeddedWebApplicationContext:551 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp' defined in file [/Users/chenzhongyi/workspace/chen/demo/target/classes/com/chen/demo/services/imp/UserServiceImp.class]: Invocation of init method failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/chen/demo/mappers/UserMapper.xml
+### The error may involve com.chen.demo.mappers.UserMapper.fetchAll
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2018-02-26 14:12:58,574 [restartedMain]  INFO AutoConfigurationReportLoggingInitializer:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-02-26 14:12:58,578 [restartedMain] ERROR SpringApplication:771 - Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp' defined in file [/Users/chenzhongyi/workspace/chen/demo/target/classes/com/chen/demo/services/imp/UserServiceImp.class]: Invocation of init method failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/chen/demo/mappers/UserMapper.xml
+### The error may involve com.chen.demo.mappers.UserMapper.fetchAll
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.chen.demo.DemoApplication.main(DemoApplication.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp' defined in file [/Users/chenzhongyi/workspace/chen/demo/target/classes/com/chen/demo/services/imp/UserServiceImp.class]: Invocation of init method failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/chen/demo/mappers/UserMapper.xml
+### The error may involve com.chen.demo.mappers.UserMapper.fetchAll
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 24 more
+Caused by: org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/chen/demo/mappers/UserMapper.xml
+### The error may involve com.chen.demo.mappers.UserMapper.fetchAll
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:77)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy81.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy91.fetchAll(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy92.fetchAll(Unknown Source)
+	at com.chen.demo.services.imp.BaseServiceImp.fetchAll(BaseServiceImp.java:50)
+	at com.chen.demo.services.imp.UserServiceImp.initAdmin(UserServiceImp.java:37)
+	at com.chen.demo.services.imp.UserServiceImp.afterPropertiesSet(UserServiceImp.java:32)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 34 more
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/chen/demo/mappers/UserMapper.xml
+### The error may involve com.chen.demo.mappers.UserMapper.fetchAll
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 56 more
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 62 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 72 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 95 more
+2018-02-26 14:13:15,619 [restartedMain]  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 1405 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-02-26 14:13:15,621 [restartedMain]  INFO DemoApplication:597 - The following profiles are active: dev
+2018-02-26 14:13:15,707 [restartedMain]  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f893927: startup date [Mon Feb 26 14:13:15 CST 2018]; root of context hierarchy
+2018-02-26 14:13:15,728 [background-preinit]  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-02-26 14:13:16,755 [restartedMain]  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-26 14:13:17,714 [restartedMain]  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-02-26 14:13:17,782 [localhost-startStop-1]  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2078 ms
+2018-02-26 14:13:17,967 [localhost-startStop-1]  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to []
+2018-02-26 14:13:17,969 [localhost-startStop-1]  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-26 14:13:17,969 [localhost-startStop-1]  INFO ServletRegistrationBean:193 - Servlet dispatcherServlet was not registered (possibly already registered?)
+2018-02-26 14:13:17,971 [localhost-startStop-1]  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-26 14:13:18,020 [restartedMain]  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.services.imp.AccountServiceImp.setBaseMapper()
+2018-02-26 14:13:18,382 [restartedMain]  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-02-26 14:13:18,949 [restartedMain] DEBUG fetchAll:159 - ==>  Preparing: SELECT * FROM `user` WHERE isDeleted = 0 
+2018-02-26 14:13:19,048 [restartedMain] DEBUG fetchAll:159 - ==> Parameters: 
+2018-02-26 14:13:19,073 [restartedMain] TRACE fetchAll:165 - <==    Columns: id, createTime, updateTime, isDeleted, username, password, otherStr, type, email, phone, realName, isEnable
+2018-02-26 14:13:19,074 [restartedMain] TRACE fetchAll:165 - <==        Row: 11, null, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-26 14:13:19,077 [restartedMain] TRACE fetchAll:165 - <==        Row: 12, null, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-26 14:13:19,078 [restartedMain] TRACE fetchAll:165 - <==        Row: 13, 1515999327672, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-26 14:13:19,080 [restartedMain] TRACE fetchAll:165 - <==        Row: 14, 1515999400176, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-26 14:13:19,081 [restartedMain] TRACE fetchAll:165 - <==        Row: 16, 1517758965512, 1517758965512, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,082 [restartedMain] TRACE fetchAll:165 - <==        Row: 17, 1517759005001, 1517759005001, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,083 [restartedMain] TRACE fetchAll:165 - <==        Row: 18, 1517759108852, 1517759108852, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,084 [restartedMain] TRACE fetchAll:165 - <==        Row: 19, 1517759580536, 1517759580536, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,085 [restartedMain] TRACE fetchAll:165 - <==        Row: 20, 1517759679115, 1517759679115, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,087 [restartedMain] TRACE fetchAll:165 - <==        Row: 21, 1517759865192, 1517759865192, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,088 [restartedMain] TRACE fetchAll:165 - <==        Row: 22, 1517760228714, 1517760228714, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,088 [restartedMain] TRACE fetchAll:165 - <==        Row: 23, 1517760348892, 1517760348892, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,089 [restartedMain] TRACE fetchAll:165 - <==        Row: 24, 1517760415756, 1517760415756, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,090 [restartedMain] TRACE fetchAll:165 - <==        Row: 25, 1517760629727, 1517760629727, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,090 [restartedMain] TRACE fetchAll:165 - <==        Row: 26, 1517796214543, 1517796214543, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,091 [restartedMain] TRACE fetchAll:165 - <==        Row: 478024553142947840, 1517824429492, null, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,093 [restartedMain] TRACE fetchAll:165 - <==        Row: 478025000834568192, 1517824536230, 1517824536230, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,094 [restartedMain] TRACE fetchAll:165 - <==        Row: 478025919886266368, 1517824755349, 1517825339042, 0, username1, null, null, USER, null, 187583245191, null, 1
+2018-02-26 14:13:19,094 [restartedMain] TRACE fetchAll:165 - <==        Row: 478635828722012160, 1517970168947, 1517970168947, 0, admin, fe39a8480765a0806e83e21e9fa6cd5f, MIyTNMnS82dQ, ADMIN, null, 18758324519, null, 1
+2018-02-26 14:13:19,095 [restartedMain] TRACE fetchAll:165 - <==        Row: 478693820687454208, 1517983995309, 1517983995309, 0, admin, b8185c6190e391feb6323a549d37a18c, G41kbw9OIacj, ADMIN, null, 18758324519, null, 1
+2018-02-26 14:13:19,095 [restartedMain] TRACE fetchAll:165 - <==        Row: 478693832175652864, 1517983998048, 1517983998048, 0, admin, b7415654a04c1745bd02dcb4abdd285b, 33NCFmpNm218, ADMIN, null, 18758324519, null, 1
+2018-02-26 14:13:19,095 [restartedMain] TRACE fetchAll:165 - <==        Row: 478696277912064000, 1517984581157, 1517984581157, 0, admin, ab69323c52c2c968f695105e682df70c, KAbapEYpsvO9, ADMIN, null, 18758324519, null, 1
+2018-02-26 14:13:19,096 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700246126301184, 1517985527253, 1517985527253, 0, admin, a1bea78c1b1077ae7a9ca6f216a4c731, ZIMN5nGLm7Oa, ADMIN, null, 18758324519, null, 1
+2018-02-26 14:13:19,096 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700252078018560, 1517985528672, 1517985528672, 0, admin, b11de202d9a4e751b2708a4cb9beb45c, NlCaK9NnCQYc, ADMIN, null, 18758324519, null, 1
+2018-02-26 14:13:19,096 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700652155899904, 1517985624058, 1517985624058, 0, admin, f7b15066628edd2f67850d47acc3406c, dVSpEZSnWckk, ADMIN, null, 18758324519, null, 1
+2018-02-26 14:13:19,097 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700659382685696, 1517985625781, 1517985625781, 0, null, d8240c22a6494a6edccc5300e098e5d0, Fd4JrIKiHVGa, USER, 765485378@qq.com, 18758324519, null, 1
+2018-02-26 14:13:19,097 [restartedMain] TRACE fetchAll:165 - <==        Row: 478701575297044480, 1517985844152, 1517985844152, 0, admin, 38389c8de3e1b3609732fe99fc69d307, nefwZT4pZwE9, ADMIN, null, 18758324519, null, 1
+2018-02-26 14:13:19,098 [restartedMain] TRACE fetchAll:165 - <==        Row: 478701583106838528, 1517985846014, 1517985846014, 0, null, 0c7a75a4292d56fa59773378602f7e28, 6nRLMK8LAHr0, USER, 765485378@qq.com, 18758324519, null, 1
+2018-02-26 14:13:19,098 [restartedMain] TRACE fetchAll:165 - <==        Row: 479002122017312768, 1518057500074, 1518057500074, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,098 [restartedMain] TRACE fetchAll:165 - <==        Row: 479155592900907008, 1518094090384, 1518094090384, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,099 [restartedMain] TRACE fetchAll:165 - <==        Row: 479175157760397312, 1518098755010, 1518098755010, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,099 [restartedMain] TRACE fetchAll:165 - <==        Row: 479383666565320704, 1518148467383, 1518148467383, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,099 [restartedMain] TRACE fetchAll:165 - <==        Row: 479417456406827008, 1518156523509, 1518156523509, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,100 [restartedMain] TRACE fetchAll:165 - <==        Row: 479418251793666048, 1518156713144, 1518156713144, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,100 [restartedMain] TRACE fetchAll:165 - <==        Row: 479422942858448896, 1518157831581, 1518157831581, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,100 [restartedMain] TRACE fetchAll:165 - <==        Row: 480189252747923456, 1518340534096, 1518340534096, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,101 [restartedMain] TRACE fetchAll:165 - <==        Row: 480192929873268736, 1518341410791, 1518341410791, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,101 [restartedMain] TRACE fetchAll:165 - <==        Row: 480194975271751680, 1518341898452, 1518341898452, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,101 [restartedMain] TRACE fetchAll:165 - <==        Row: 480206339134459904, 1518344607808, 1518344607808, 0, null, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,102 [restartedMain] TRACE fetchAll:165 - <==        Row: 480207598352601088, 1518344908029, 1518344908029, 0, null, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,102 [restartedMain] DEBUG fetchAll:159 - <==      Total: 40
+2018-02-26 14:13:19,104 [restartedMain] DEBUG fetchAll:159 - ==>  Preparing: SELECT * FROM `user` WHERE isDeleted = 0 
+2018-02-26 14:13:19,104 [restartedMain] DEBUG fetchAll:159 - ==> Parameters: 
+2018-02-26 14:13:19,105 [restartedMain] TRACE fetchAll:165 - <==    Columns: id, createTime, updateTime, isDeleted, username, password, otherStr, type, email, phone, realName, isEnable
+2018-02-26 14:13:19,106 [restartedMain] TRACE fetchAll:165 - <==        Row: 11, null, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-26 14:13:19,106 [restartedMain] TRACE fetchAll:165 - <==        Row: 12, null, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-26 14:13:19,107 [restartedMain] TRACE fetchAll:165 - <==        Row: 13, 1515999327672, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-26 14:13:19,107 [restartedMain] TRACE fetchAll:165 - <==        Row: 14, 1515999400176, null, 0, username, null, null, MANAGER, null, phone, null, 0
+2018-02-26 14:13:19,108 [restartedMain] TRACE fetchAll:165 - <==        Row: 16, 1517758965512, 1517758965512, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,108 [restartedMain] TRACE fetchAll:165 - <==        Row: 17, 1517759005001, 1517759005001, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,108 [restartedMain] TRACE fetchAll:165 - <==        Row: 18, 1517759108852, 1517759108852, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,108 [restartedMain] TRACE fetchAll:165 - <==        Row: 19, 1517759580536, 1517759580536, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,109 [restartedMain] TRACE fetchAll:165 - <==        Row: 20, 1517759679115, 1517759679115, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,109 [restartedMain] TRACE fetchAll:165 - <==        Row: 21, 1517759865192, 1517759865192, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,109 [restartedMain] TRACE fetchAll:165 - <==        Row: 22, 1517760228714, 1517760228714, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,110 [restartedMain] TRACE fetchAll:165 - <==        Row: 23, 1517760348892, 1517760348892, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,110 [restartedMain] TRACE fetchAll:165 - <==        Row: 24, 1517760415756, 1517760415756, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,110 [restartedMain] TRACE fetchAll:165 - <==        Row: 25, 1517760629727, 1517760629727, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,111 [restartedMain] TRACE fetchAll:165 - <==        Row: 26, 1517796214543, 1517796214543, 0, username, null, null, MANAGER, null, 18758324519, null, 0
+2018-02-26 14:13:19,111 [restartedMain] TRACE fetchAll:165 - <==        Row: 478024553142947840, 1517824429492, null, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,111 [restartedMain] TRACE fetchAll:165 - <==        Row: 478025000834568192, 1517824536230, 1517824536230, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,112 [restartedMain] TRACE fetchAll:165 - <==        Row: 478025919886266368, 1517824755349, 1517825339042, 0, username1, null, null, USER, null, 187583245191, null, 1
+2018-02-26 14:13:19,112 [restartedMain] TRACE fetchAll:165 - <==        Row: 478635828722012160, 1517970168947, 1517970168947, 0, admin, fe39a8480765a0806e83e21e9fa6cd5f, MIyTNMnS82dQ, ADMIN, null, 18758324519, null, 1
+2018-02-26 14:13:19,112 [restartedMain] TRACE fetchAll:165 - <==        Row: 478693820687454208, 1517983995309, 1517983995309, 0, admin, b8185c6190e391feb6323a549d37a18c, G41kbw9OIacj, ADMIN, null, 18758324519, null, 1
+2018-02-26 14:13:19,112 [restartedMain] TRACE fetchAll:165 - <==        Row: 478693832175652864, 1517983998048, 1517983998048, 0, admin, b7415654a04c1745bd02dcb4abdd285b, 33NCFmpNm218, ADMIN, null, 18758324519, null, 1
+2018-02-26 14:13:19,113 [restartedMain] TRACE fetchAll:165 - <==        Row: 478696277912064000, 1517984581157, 1517984581157, 0, admin, ab69323c52c2c968f695105e682df70c, KAbapEYpsvO9, ADMIN, null, 18758324519, null, 1
+2018-02-26 14:13:19,113 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700246126301184, 1517985527253, 1517985527253, 0, admin, a1bea78c1b1077ae7a9ca6f216a4c731, ZIMN5nGLm7Oa, ADMIN, null, 18758324519, null, 1
+2018-02-26 14:13:19,113 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700252078018560, 1517985528672, 1517985528672, 0, admin, b11de202d9a4e751b2708a4cb9beb45c, NlCaK9NnCQYc, ADMIN, null, 18758324519, null, 1
+2018-02-26 14:13:19,114 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700652155899904, 1517985624058, 1517985624058, 0, admin, f7b15066628edd2f67850d47acc3406c, dVSpEZSnWckk, ADMIN, null, 18758324519, null, 1
+2018-02-26 14:13:19,114 [restartedMain] TRACE fetchAll:165 - <==        Row: 478700659382685696, 1517985625781, 1517985625781, 0, null, d8240c22a6494a6edccc5300e098e5d0, Fd4JrIKiHVGa, USER, 765485378@qq.com, 18758324519, null, 1
+2018-02-26 14:13:19,114 [restartedMain] TRACE fetchAll:165 - <==        Row: 478701575297044480, 1517985844152, 1517985844152, 0, admin, 38389c8de3e1b3609732fe99fc69d307, nefwZT4pZwE9, ADMIN, null, 18758324519, null, 1
+2018-02-26 14:13:19,115 [restartedMain] TRACE fetchAll:165 - <==        Row: 478701583106838528, 1517985846014, 1517985846014, 0, null, 0c7a75a4292d56fa59773378602f7e28, 6nRLMK8LAHr0, USER, 765485378@qq.com, 18758324519, null, 1
+2018-02-26 14:13:19,115 [restartedMain] TRACE fetchAll:165 - <==        Row: 479002122017312768, 1518057500074, 1518057500074, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,115 [restartedMain] TRACE fetchAll:165 - <==        Row: 479155592900907008, 1518094090384, 1518094090384, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,116 [restartedMain] TRACE fetchAll:165 - <==        Row: 479175157760397312, 1518098755010, 1518098755010, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,116 [restartedMain] TRACE fetchAll:165 - <==        Row: 479383666565320704, 1518148467383, 1518148467383, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,116 [restartedMain] TRACE fetchAll:165 - <==        Row: 479417456406827008, 1518156523509, 1518156523509, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,116 [restartedMain] TRACE fetchAll:165 - <==        Row: 479418251793666048, 1518156713144, 1518156713144, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,117 [restartedMain] TRACE fetchAll:165 - <==        Row: 479422942858448896, 1518157831581, 1518157831581, 0, username, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,117 [restartedMain] TRACE fetchAll:165 - <==        Row: 480189252747923456, 1518340534096, 1518340534096, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,117 [restartedMain] TRACE fetchAll:165 - <==        Row: 480192929873268736, 1518341410791, 1518341410791, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,118 [restartedMain] TRACE fetchAll:165 - <==        Row: 480194975271751680, 1518341898452, 1518341898452, 0, name, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,118 [restartedMain] TRACE fetchAll:165 - <==        Row: 480206339134459904, 1518344607808, 1518344607808, 0, null, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,118 [restartedMain] TRACE fetchAll:165 - <==        Row: 480207598352601088, 1518344908029, 1518344908029, 0, null, null, null, USER, null, 18758324519, null, 1
+2018-02-26 14:13:19,119 [restartedMain] DEBUG fetchAll:159 - <==      Total: 40
+2018-02-26 14:13:19,263 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.AccountController.login(com.chen.demo.requests.AccountLoginRequest) throws java.lang.Exception
+2018-02-26 14:13:19,267 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.add(com.chen.demo.vos.UserVo,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2018-02-26 14:13:19,268 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user/{id}],methods=[DELETE]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.delete(java.lang.Long) throws com.chen.demo.exceptions.BusinessException
+2018-02-26 14:13:19,268 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[GET]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.list()
+2018-02-26 14:13:19,268 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user/{id}],methods=[PUT]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.edit(java.lang.Long,com.chen.demo.vos.UserVo) throws com.chen.demo.exceptions.BusinessException,java.lang.Exception
+2018-02-26 14:13:19,268 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user/{id}],methods=[GET]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.UserController.info(java.lang.Long) throws com.chen.demo.exceptions.BusinessException
+2018-02-26 14:13:19,271 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-26 14:13:19,271 [restartedMain]  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-26 14:13:19,358 [restartedMain]  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f893927: startup date [Mon Feb 26 14:13:15 CST 2018]; root of context hierarchy
+2018-02-26 14:13:19,396 [restartedMain]  INFO ExceptionHandlerExceptionResolver:273 - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-26 14:13:19,985 [restartedMain]  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-02-26 14:13:20,034 [restartedMain]  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-02-26 14:13:20,110 [restartedMain]  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-02-26 14:13:20,116 [restartedMain]  INFO DemoApplication:57 - Started DemoApplication in 4.784 seconds (JVM running for 5.686)
+2018-02-26 15:37:02,636 [Thread-21]  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f893927: startup date [Mon Feb 26 14:13:15 CST 2018]; root of context hierarchy
+2018-02-26 15:37:02,659 [Thread-21]  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown

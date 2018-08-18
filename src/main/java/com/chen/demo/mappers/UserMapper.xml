@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "com.chen.demo.mappers.UserMapper">
+
+    <insert id = "insert" useGeneratedKeys = "true" keyProperty = "id" >
+       <include refid = "base.insert"><property name = "tableName" value = "user"/></include>
+    </insert>
+
+    <update id = "update">
+        <include refid = "base.update"><property name = "tableName" value = "user"/></include>
+    </update>
+
+    <update id = "delete">
+        <include refid = "base.delete"><property name = "tableName" value = "user"/></include>
+    </update>
+
+    <select id = "findByID" resultType = "user">
+        <include refid = "base.findByID"><property name = "tableName" value = "user"/></include>
+    </select>
+
+    <select id = "fetchAll" resultType = "user">
+        <include refid = "base.fetchAll"><property name = "tableName" value = "user"/></include>
+    </select>
+
+    <select id = "findByUsername" resultType = "user">
+        select * from `user` where username = #{username} and <include refid = "base.query"/>
+    </select>
+</mapper>

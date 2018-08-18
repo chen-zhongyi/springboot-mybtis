@@ -1,0 +1,736 @@
+2018-01-12 22:48:49,530  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12742 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 22:48:49,532  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 22:48:49,619  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@299d7e58: startup date [Fri Jan 12 22:48:49 CST 2018]; root of context hierarchy
+2018-01-12 22:48:49,659  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 22:48:50,320  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 22:48:51,172  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 22:48:51,272  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1656 ms
+2018-01-12 22:48:51,374  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 22:48:51,378  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 22:48:51,423  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 22:48:51,426  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 22:48:51,735 ERROR MapperFactoryBean:82 - Error while adding the mapper 'interface com.chen.demo.mappers.UserMapper' to configuration.
+org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:173)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.chen.demo.DemoApplication.main(DemoApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:68)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 56 more
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 60 more
+Caused by: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 62 more
+2018-01-12 22:48:51,741  WARN AnnotationConfigEmbeddedWebApplicationContext:551 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImp': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [/Users/chenzhongyi/workspace/chen/demo/target/classes/com/chen/demo/mappers/UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+2018-01-12 22:48:51,755  INFO AutoConfigurationReportLoggingInitializer:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-01-12 22:48:51,759 ERROR SpringApplication:771 - Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImp': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [/Users/chenzhongyi/workspace/chen/demo/target/classes/com/chen/demo/mappers/UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.chen.demo.DemoApplication.main(DemoApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImp': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [/Users/chenzhongyi/workspace/chen/demo/target/classes/com/chen/demo/mappers/UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 24 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [/Users/chenzhongyi/workspace/chen/demo/target/classes/com/chen/demo/mappers/UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 37 more
+Caused by: java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:83)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 47 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:173)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	... 50 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:68)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 56 more
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 60 more
+Caused by: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 62 more
+2018-01-12 22:51:46,689  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12753 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 22:51:46,692  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 22:51:46,785  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22e16e89: startup date [Fri Jan 12 22:51:46 CST 2018]; root of context hierarchy
+2018-01-12 22:51:46,833  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 22:51:47,634  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 22:51:48,490  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 22:51:48,595  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1813 ms
+2018-01-12 22:51:48,694  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 22:51:48,699  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 22:51:48,751  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 22:51:49,016  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 22:51:49,031 ERROR MapperFactoryBean:82 - Error while adding the mapper 'interface com.chen.demo.mappers.UserMapper' to configuration.
+org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:173)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.chen.demo.DemoApplication.main(DemoApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:68)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 43 more
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 47 more
+Caused by: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 49 more
+2018-01-12 22:51:49,035  WARN AnnotationConfigEmbeddedWebApplicationContext:551 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImp': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [/Users/chenzhongyi/workspace/chen/demo/target/classes/com/chen/demo/mappers/UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+2018-01-12 22:51:49,048  INFO AutoConfigurationReportLoggingInitializer:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-01-12 22:51:49,052 ERROR SpringApplication:771 - Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImp': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [/Users/chenzhongyi/workspace/chen/demo/target/classes/com/chen/demo/mappers/UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.chen.demo.DemoApplication.main(DemoApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [/Users/chenzhongyi/workspace/chen/demo/target/classes/com/chen/demo/mappers/UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 24 more
+Caused by: java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:83)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 34 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:173)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	... 37 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:68)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 43 more
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 47 more
+Caused by: java.lang.ClassNotFoundException: Cannot find class: user
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 49 more
+2018-01-12 22:54:01,249  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12758 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 22:54:01,251  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 22:54:01,327  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11053221: startup date [Fri Jan 12 22:54:01 CST 2018]; root of context hierarchy
+2018-01-12 22:54:01,439  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 22:54:02,036  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 22:54:02,831  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 22:54:02,935  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1611 ms
+2018-01-12 22:54:03,043  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 22:54:03,047  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 22:54:03,091  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 22:54:03,094  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 22:54:03,478  INFO RequestMappingHandlerMapping:543 - Mapped "{[],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 22:54:03,480  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 22:54:03,484  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 22:54:03,484  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 22:54:03,561  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11053221: startup date [Fri Jan 12 22:54:01 CST 2018]; root of context hierarchy
+2018-01-12 22:54:04,129  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 22:54:04,167  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 22:54:04,230  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 22:54:04,235  INFO DemoApplication:57 - Started DemoApplication in 3.371 seconds (JVM running for 4.202)
+2018-01-12 22:54:25,578  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11053221: startup date [Fri Jan 12 22:54:01 CST 2018]; root of context hierarchy
+2018-01-12 22:54:25,585  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-12 22:54:28,857  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12763 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 22:54:28,858  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 22:54:28,934  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b764719: startup date [Fri Jan 12 22:54:28 CST 2018]; root of context hierarchy
+2018-01-12 22:54:29,103  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 22:54:29,799  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 22:54:30,412  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 22:54:30,485  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1554 ms
+2018-01-12 22:54:30,578  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 22:54:30,581  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 22:54:30,606  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 22:54:30,612  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 22:54:30,948  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 22:54:30,952  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 22:54:30,953  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 22:54:31,014  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b764719: startup date [Fri Jan 12 22:54:28 CST 2018]; root of context hierarchy
+2018-01-12 22:54:31,478  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 22:54:31,530  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 22:54:31,621  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 22:54:31,626  INFO DemoApplication:57 - Started DemoApplication in 2.951 seconds (JVM running for 3.597)
+2018-01-12 23:12:51,172  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b764719: startup date [Fri Jan 12 22:54:28 CST 2018]; root of context hierarchy
+2018-01-12 23:12:51,200  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-12 23:12:54,814  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12802 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 23:12:54,815  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 23:12:54,862  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d231030: startup date [Fri Jan 12 23:12:54 CST 2018]; root of context hierarchy
+2018-01-12 23:12:55,040  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 23:12:55,563  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 23:12:56,179  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 23:12:56,248  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1388 ms
+2018-01-12 23:12:56,344  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 23:12:56,347  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 23:12:56,373  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 23:12:56,375  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.controllers.UserController.setUserVo()
+2018-01-12 23:12:56,376  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 23:12:56,755  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 23:12:56,759  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 23:12:56,759  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 23:12:56,809  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d231030: startup date [Fri Jan 12 23:12:54 CST 2018]; root of context hierarchy
+2018-01-12 23:12:57,199  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 23:12:57,233  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 23:12:57,284  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 23:12:57,289  INFO DemoApplication:57 - Started DemoApplication in 2.731 seconds (JVM running for 3.598)
+2018-01-12 23:14:26,753  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-12 23:14:26,774  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-01-12 23:26:08,432  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d231030: startup date [Fri Jan 12 23:12:54 CST 2018]; root of context hierarchy
+2018-01-12 23:26:08,453  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-12 23:26:11,898  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12845 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 23:26:11,900  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 23:26:11,959  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@447d945f: startup date [Fri Jan 12 23:26:11 CST 2018]; root of context hierarchy
+2018-01-12 23:26:12,081  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 23:26:12,595  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 23:26:13,153  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 23:26:13,219  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1263 ms
+2018-01-12 23:26:13,307  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 23:26:13,310  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 23:26:13,335  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 23:26:13,336  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.controllers.UserController.setUserVo()
+2018-01-12 23:26:13,338  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 23:26:13,657  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 23:26:13,661  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 23:26:13,661  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 23:26:13,713  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@447d945f: startup date [Fri Jan 12 23:26:11 CST 2018]; root of context hierarchy
+2018-01-12 23:26:14,121  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 23:26:14,159  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 23:26:14,211  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 23:26:14,215  INFO DemoApplication:57 - Started DemoApplication in 2.562 seconds (JVM running for 3.605)
+2018-01-12 23:26:17,814  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-12 23:26:17,832  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-01-12 23:27:05,331  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@447d945f: startup date [Fri Jan 12 23:26:11 CST 2018]; root of context hierarchy
+2018-01-12 23:27:05,337  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-12 23:27:08,951  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12850 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 23:27:08,953  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 23:27:09,015  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@76196c92: startup date [Fri Jan 12 23:27:09 CST 2018]; root of context hierarchy
+2018-01-12 23:27:09,158  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 23:27:09,833  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 23:27:10,466  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 23:27:10,535  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1525 ms
+2018-01-12 23:27:10,626  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 23:27:10,630  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 23:27:10,655  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.controllers.UserController.setUserVo()
+2018-01-12 23:27:10,657  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 23:27:10,659  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 23:27:10,986  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 23:27:10,990  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 23:27:10,991  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 23:27:11,040  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@76196c92: startup date [Fri Jan 12 23:27:09 CST 2018]; root of context hierarchy
+2018-01-12 23:27:11,491  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 23:27:11,544  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 23:27:11,630  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 23:27:11,634  INFO DemoApplication:57 - Started DemoApplication in 2.874 seconds (JVM running for 3.512)
+2018-01-12 23:27:15,698  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-12 23:27:15,715  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-01-12 23:28:43,360  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@76196c92: startup date [Fri Jan 12 23:27:09 CST 2018]; root of context hierarchy
+2018-01-12 23:28:43,370  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-12 23:28:46,551  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12855 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 23:28:46,553  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 23:28:46,628  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c7a3b11: startup date [Fri Jan 12 23:28:46 CST 2018]; root of context hierarchy
+2018-01-12 23:28:46,839  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 23:28:47,425  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 23:28:48,023  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 23:28:48,088  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1463 ms
+2018-01-12 23:28:48,179  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 23:28:48,182  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 23:28:48,209  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.controllers.UserController.setUserVo()
+2018-01-12 23:28:48,211  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 23:28:48,213  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 23:28:48,528  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 23:28:48,532  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 23:28:48,533  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 23:28:48,580  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c7a3b11: startup date [Fri Jan 12 23:28:46 CST 2018]; root of context hierarchy
+2018-01-12 23:28:48,971  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 23:28:49,008  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 23:28:49,062  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 23:28:49,066  INFO DemoApplication:57 - Started DemoApplication in 2.728 seconds (JVM running for 3.456)
+2018-01-12 23:28:52,224  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-12 23:28:52,240  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-01-12 23:31:41,072  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c7a3b11: startup date [Fri Jan 12 23:28:46 CST 2018]; root of context hierarchy
+2018-01-12 23:31:41,088  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-12 23:31:44,128  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12866 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 23:31:44,136  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 23:31:44,184  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@617b08bc: startup date [Fri Jan 12 23:31:44 CST 2018]; root of context hierarchy
+2018-01-12 23:31:44,326  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 23:31:44,887  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 23:31:45,486  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 23:31:45,558  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1376 ms
+2018-01-12 23:31:45,643  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 23:31:45,646  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 23:31:45,671  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 23:31:45,673  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.controllers.UserController.setUserVo()
+2018-01-12 23:31:45,674  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 23:31:46,006  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 23:31:46,010  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 23:31:46,010  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 23:31:46,060  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@617b08bc: startup date [Fri Jan 12 23:31:44 CST 2018]; root of context hierarchy
+2018-01-12 23:31:46,447  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 23:31:46,482  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 23:31:46,530  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 23:31:46,534  INFO DemoApplication:57 - Started DemoApplication in 2.656 seconds (JVM running for 3.603)
+2018-01-12 23:31:49,399  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-12 23:31:49,415  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-01-12 23:34:56,368  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@617b08bc: startup date [Fri Jan 12 23:31:44 CST 2018]; root of context hierarchy
+2018-01-12 23:34:56,375  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-12 23:34:59,140  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12873 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 23:34:59,141  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 23:34:59,249  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b35b707: startup date [Fri Jan 12 23:34:59 CST 2018]; root of context hierarchy
+2018-01-12 23:34:59,332  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 23:34:59,891  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 23:35:00,510  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 23:35:00,577  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1331 ms
+2018-01-12 23:35:00,661  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 23:35:00,665  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 23:35:00,690  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 23:35:00,692  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.controllers.UserController.setUserVo()
+2018-01-12 23:35:00,694  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 23:35:01,015  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 23:35:01,020  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 23:35:01,020  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 23:35:01,079  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b35b707: startup date [Fri Jan 12 23:34:59 CST 2018]; root of context hierarchy
+2018-01-12 23:35:01,521  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 23:35:01,578  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 23:35:01,632  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 23:35:01,636  INFO DemoApplication:57 - Started DemoApplication in 2.72 seconds (JVM running for 3.72)
+2018-01-12 23:35:05,157  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-12 23:35:05,178  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-01-12 23:36:33,975  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b35b707: startup date [Fri Jan 12 23:34:59 CST 2018]; root of context hierarchy
+2018-01-12 23:36:33,983  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-12 23:36:37,197  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12880 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 23:36:37,200  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 23:36:37,323  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@da7030f: startup date [Fri Jan 12 23:36:37 CST 2018]; root of context hierarchy
+2018-01-12 23:36:37,407  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 23:36:38,175  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 23:36:38,790  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 23:36:38,862  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1543 ms
+2018-01-12 23:36:38,946  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 23:36:38,949  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 23:36:38,975  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 23:36:38,977  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.controllers.UserController.setUserVo()
+2018-01-12 23:36:38,979  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 23:36:39,309  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 23:36:39,314  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 23:36:39,314  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 23:36:39,365  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@da7030f: startup date [Fri Jan 12 23:36:37 CST 2018]; root of context hierarchy
+2018-01-12 23:36:39,758  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 23:36:39,795  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 23:36:39,850  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 23:36:39,854  INFO DemoApplication:57 - Started DemoApplication in 2.846 seconds (JVM running for 3.759)
+2018-01-12 23:36:42,544  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-12 23:36:42,563  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-01-12 23:38:16,910  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@da7030f: startup date [Fri Jan 12 23:36:37 CST 2018]; root of context hierarchy
+2018-01-12 23:38:16,933  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-12 23:38:19,956  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12885 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 23:38:19,958  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 23:38:20,016  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@183b85b3: startup date [Fri Jan 12 23:38:20 CST 2018]; root of context hierarchy
+2018-01-12 23:38:20,183  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 23:38:21,191  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 23:38:22,264  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 23:38:22,348  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2335 ms
+2018-01-12 23:38:22,514  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 23:38:22,518  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 23:38:22,553  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 23:38:22,558  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.controllers.UserController.setUserVo()
+2018-01-12 23:38:22,561  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 23:38:22,984  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 23:38:22,991  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 23:38:22,991  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 23:38:23,055  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@183b85b3: startup date [Fri Jan 12 23:38:20 CST 2018]; root of context hierarchy
+2018-01-12 23:38:23,617  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 23:38:23,656  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 23:38:23,745  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 23:38:23,753  INFO DemoApplication:57 - Started DemoApplication in 3.987 seconds (JVM running for 4.664)
+2018-01-12 23:38:41,746  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-12 23:38:41,765  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-01-12 23:42:08,196  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@183b85b3: startup date [Fri Jan 12 23:38:20 CST 2018]; root of context hierarchy
+2018-01-12 23:42:08,201  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-12 23:42:10,918  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12899 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 23:42:10,920  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 23:42:11,004  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2286e6d3: startup date [Fri Jan 12 23:42:10 CST 2018]; root of context hierarchy
+2018-01-12 23:42:11,223  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 23:42:11,758  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 23:42:12,343  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 23:42:12,412  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1413 ms
+2018-01-12 23:42:12,494  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 23:42:12,498  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 23:42:12,524  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 23:42:12,526  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.controllers.UserController.setUserVo()
+2018-01-12 23:42:12,528  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 23:42:12,856  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 23:42:12,860  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 23:42:12,860  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 23:42:12,912  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2286e6d3: startup date [Fri Jan 12 23:42:10 CST 2018]; root of context hierarchy
+2018-01-12 23:42:13,295  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 23:42:13,329  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 23:42:13,380  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 23:42:13,384  INFO DemoApplication:57 - Started DemoApplication in 2.678 seconds (JVM running for 3.595)
+2018-01-12 23:42:17,488  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-12 23:42:17,504  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2018-01-12 23:42:41,748  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2286e6d3: startup date [Fri Jan 12 23:42:10 CST 2018]; root of context hierarchy
+2018-01-12 23:42:41,754  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-12 23:42:44,364  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12902 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 23:42:44,366  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 23:42:44,461  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@408678a0: startup date [Fri Jan 12 23:42:44 CST 2018]; root of context hierarchy
+2018-01-12 23:42:44,518  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 23:42:45,326  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 23:42:46,033  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 23:42:46,101  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1651 ms
+2018-01-12 23:42:46,183  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 23:42:46,186  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 23:42:46,213  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.controllers.UserController.setUserVo()
+2018-01-12 23:42:46,215  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 23:42:46,216  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 23:42:46,545  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 23:42:46,549  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 23:42:46,550  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 23:42:46,598  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@408678a0: startup date [Fri Jan 12 23:42:44 CST 2018]; root of context hierarchy
+2018-01-12 23:42:46,982  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 23:42:47,016  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 23:42:47,068  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 23:42:47,073  INFO DemoApplication:57 - Started DemoApplication in 2.929 seconds (JVM running for 3.717)
+2018-01-12 23:42:50,852  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-12 23:42:50,869  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-01-12 23:42:51,696  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-01-12 23:42:51,726  INFO SQLErrorCodesFactory:127 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2018-01-12 23:46:57,690  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@408678a0: startup date [Fri Jan 12 23:42:44 CST 2018]; root of context hierarchy
+2018-01-12 23:46:57,699  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-12 23:46:59,906  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12912 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 23:46:59,908  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 23:46:59,954  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@102680df: startup date [Fri Jan 12 23:46:59 CST 2018]; root of context hierarchy
+2018-01-12 23:47:00,100  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 23:47:00,784  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 23:47:01,572  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 23:47:01,646  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1695 ms
+2018-01-12 23:47:01,747  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 23:47:01,751  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 23:47:01,780  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 23:47:01,782  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.controllers.UserController.setUserVo()
+2018-01-12 23:47:01,784  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 23:47:02,194  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 23:47:02,198  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 23:47:02,199  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 23:47:02,253  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@102680df: startup date [Fri Jan 12 23:46:59 CST 2018]; root of context hierarchy
+2018-01-12 23:47:02,715  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 23:47:02,752  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 23:47:02,801  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 23:47:02,806  INFO DemoApplication:57 - Started DemoApplication in 3.101 seconds (JVM running for 4.265)
+2018-01-12 23:47:05,979  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-12 23:47:05,997  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-01-12 23:49:57,581  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@102680df: startup date [Fri Jan 12 23:46:59 CST 2018]; root of context hierarchy
+2018-01-12 23:49:57,590  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-12 23:50:00,936  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12921 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 23:50:00,937  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 23:50:01,079  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d231030: startup date [Fri Jan 12 23:50:01 CST 2018]; root of context hierarchy
+2018-01-12 23:50:01,164  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 23:50:01,751  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 23:50:02,360  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 23:50:02,433  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1370 ms
+2018-01-12 23:50:02,524  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 23:50:02,527  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 23:50:02,552  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 23:50:02,554  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.controllers.UserController.setUserVo()
+2018-01-12 23:50:02,555  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 23:50:02,873  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 23:50:02,877  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 23:50:02,878  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 23:50:02,932  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d231030: startup date [Fri Jan 12 23:50:01 CST 2018]; root of context hierarchy
+2018-01-12 23:50:03,370  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 23:50:03,421  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 23:50:03,509  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 23:50:03,513  INFO DemoApplication:57 - Started DemoApplication in 2.894 seconds (JVM running for 3.689)
+2018-01-12 23:50:08,468  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-12 23:50:08,484  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-01-12 23:52:15,693  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d231030: startup date [Fri Jan 12 23:50:01 CST 2018]; root of context hierarchy
+2018-01-12 23:52:15,702  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-12 23:52:18,675  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12928 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 23:52:18,677  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 23:52:18,762  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22e16e89: startup date [Fri Jan 12 23:52:18 CST 2018]; root of context hierarchy
+2018-01-12 23:52:18,932  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 23:52:19,523  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 23:52:20,083  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 23:52:20,154  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1396 ms
+2018-01-12 23:52:20,242  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 23:52:20,245  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 23:52:20,272  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 23:52:20,274  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.controllers.UserController.setUserVo()
+2018-01-12 23:52:20,276  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 23:52:20,598  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 23:52:20,601  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 23:52:20,602  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 23:52:20,650  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22e16e89: startup date [Fri Jan 12 23:52:18 CST 2018]; root of context hierarchy
+2018-01-12 23:52:21,066  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 23:52:21,112  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 23:52:21,164  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 23:52:21,169  INFO DemoApplication:57 - Started DemoApplication in 2.717 seconds (JVM running for 3.468)
+2018-01-12 23:52:24,582  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-12 23:52:24,597  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-01-12 23:53:33,075  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22e16e89: startup date [Fri Jan 12 23:52:18 CST 2018]; root of context hierarchy
+2018-01-12 23:53:33,079  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-12 23:53:36,024  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12933 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 23:53:36,027  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 23:53:36,092  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7abd5215: startup date [Fri Jan 12 23:53:36 CST 2018]; root of context hierarchy
+2018-01-12 23:53:36,364  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 23:53:37,146  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 23:53:37,886  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 23:53:37,981  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1897 ms
+2018-01-12 23:53:38,102  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 23:53:38,105  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 23:53:38,148  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 23:53:38,153  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.controllers.UserController.setUserVo()
+2018-01-12 23:53:38,155  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 23:53:38,530  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 23:53:38,535  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 23:53:38,535  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 23:53:38,591  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7abd5215: startup date [Fri Jan 12 23:53:36 CST 2018]; root of context hierarchy
+2018-01-12 23:53:39,003  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 23:53:39,038  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 23:53:39,093  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 23:53:39,098  INFO DemoApplication:57 - Started DemoApplication in 3.279 seconds (JVM running for 3.955)
+2018-01-12 23:53:45,286  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-12 23:53:45,302  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-01-12 23:55:49,162  INFO AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7abd5215: startup date [Fri Jan 12 23:53:36 CST 2018]; root of context hierarchy
+2018-01-12 23:55:49,172  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-12 23:55:52,759  INFO DemoApplication:48 - Starting DemoApplication on chenzhongyideMacBook-Pro.local with PID 12938 (/Users/chenzhongyi/workspace/chen/demo/target/classes started by chenzhongyi in /Users/chenzhongyi/workspace/chen/demo)
+2018-01-12 23:55:52,764  INFO DemoApplication:597 - The following profiles are active: dev
+2018-01-12 23:55:52,837  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f6ea33d: startup date [Fri Jan 12 23:55:52 CST 2018]; root of context hierarchy
+2018-01-12 23:55:53,126  INFO Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-12 23:55:53,720  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-12 23:55:54,325  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-01-12 23:55:54,392  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1558 ms
+2018-01-12 23:55:54,477  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-12 23:55:54,480  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-12 23:55:54,506  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: private void com.chen.demo.controllers.UserController.setBaseService()
+2018-01-12 23:55:54,508  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.controllers.UserController.setUserVo()
+2018-01-12 23:55:54,510  WARN AutowiredAnnotationBeanPostProcessor:467 - Autowired annotation should only be used on methods with parameters: public void com.chen.demo.services.imp.UserServiceImp.setBaseMapper()
+2018-01-12 23:55:54,844  INFO RequestMappingHandlerMapping:543 - Mapped "{[/user],methods=[POST]}" onto public com.chen.demo.vos.ResponseData com.chen.demo.controllers.BaseController.add(E)
+2018-01-12 23:55:54,848  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-12 23:55:54,849  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-12 23:55:54,899  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f6ea33d: startup date [Fri Jan 12 23:55:52 CST 2018]; root of context hierarchy
+2018-01-12 23:55:55,285  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-12 23:55:55,320  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-12 23:55:55,372  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2018-01-12 23:55:55,377  INFO DemoApplication:57 - Started DemoApplication in 2.783 seconds (JVM running for 3.599)
+2018-01-12 23:56:00,196  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-12 23:56:00,221  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms

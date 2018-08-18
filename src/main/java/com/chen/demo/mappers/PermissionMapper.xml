@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "com.chen.demo.mappers.PermissionMapper">
+
+    <insert id = "insert" useGeneratedKeys = "true" keyProperty = "id" >
+       <include refid = "base.insert"><property name = "tableName" value = "permission"/></include>
+    </insert>
+
+    <update id = "update">
+        <include refid = "base.update"><property name = "tableName" value = "permission"/></include>
+    </update>
+
+    <update id = "delete">
+        <include refid = "base.delete"><property name = "tableName" value = "permission"/></include>
+    </update>
+
+    <select id = "findByID" resultType = "permission">
+        <include refid = "base.findByID"><property name = "tableName" value = "permission"/></include>
+    </select>
+
+    <select id = "fetchAll" resultType = "permission">
+        <include refid = "base.fetchAll"><property name = "tableName" value = "permission"/></include>
+    </select>
+
+    <select id = "findByCode" resultType = "permission">
+        select * from permission where <include refid = "base.query"/> and code = #{code}
+    </select>
+
+    <select id = "findByApi" resultType = "permission">
+        select * from permission where <include refid = "base.query"/> and api = #{api}
+    </select>
+
+</mapper>

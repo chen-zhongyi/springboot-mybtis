@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "base">
+    <sql id = "insertFiled">createTime, updateTime, isDeleted, isEnable</sql>
+
+    <sql id = "insertValue">#{createTime}, #{updateTime}, #{isDeleted}, #{isEnable}</sql>
+
+    <sql id = "insert">
+        INSERT INTO `${tableName}`
+            <foreach collection = "map" index = "key" item = "value" open = "(" separator = "," close = ")">
+                `${key}`
+            </foreach>
+            VALUES
+            <foreach collection = "map" index = "key" item = "value" open = "(" separator = "," close = ")">
+                #{value}
+            </foreach>
+    </sql>
+
+    <sql id = "update">
+       UPDATE `${tableName}`
+       <set>
+           <foreach collection = "map" index = "key" item = "value" open = "" separator = "" close="">
+               <if test = "value != null">
+                   `${key}` = #{value},
+               </if>
+           </foreach>
+       </set>
+        WHERE id = #{id} and <include refid = "base.query"><property name = "prefix" value = ""/></include>
+    </sql>
+
+    <sql id = "query">${prefix}isDeleted = 0</sql>
+
+    <sql id = "delete">UPDATE `${tableName}` SET isDeleted = 1 WHERE id = #{id}</sql>
+
+    <sql id = "findByID">SELECT * FROM `${tableName}` WHERE id = #{id} and <include refid = "base.query"><property name = "prefix" value = ""/></include></sql>
+
+    <sql id = "fetchAll">SELECT * FROM `${tableName}` WHERE <include refid = "base.query"><property name = "prefix" value = ""/></include></sql>
+
+</mapper>

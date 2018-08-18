@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD SQL MAP Config 3.1//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="callSettersOnNulls" value="true"/>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+    <!--<typeHandlers>
+        <typeHandler handler="org.apache.ibatis.type.EnumOrdinalTypeHandler" javaType="java.math.RoundingMode" />
+    </typeHandlers>-->
+    <typeAliases>
+        <typeAlias alias="user" type="com.chen.demo.models.User"/>
+        <typeAlias alias="account" type = "com.chen.demo.models.Account"/>
+    </typeAliases>
+    <mappers>
+        <mapper resource="com/chen/demo/mappers/Base.xml"/>
+    </mappers>
+</configuration>
